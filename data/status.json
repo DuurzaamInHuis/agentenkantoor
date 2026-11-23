@@ -1,0 +1,29 @@
+{
+  "updatedAt": "2026-11-23T20:00:00+01:00",
+  "agents": {
+    "dih-instagram": {
+      "state": "idle",
+      "lastRunAt": "2026-11-23T06:46:05+01:00",
+      "lastRunStatus": "succeeded",
+      "nextRunAt": "2026-11-24T06:45:00+01:00",
+      "summary": "Geen weermoment vandaag, niets ingepland.",
+      "approvalsPending": 0,
+      "runUrl": "https://claude.ai/"
+    },
+    "casoleo-instagram": {
+      "state": "idle",
+      "lastRunAt": "2026-11-22T09:58:40+01:00",
+      "lastRunStatus": "succeeded",
+      "nextRunAt": "2026-11-29T09:58:00+01:00",
+      "summary": "Weekplanning klaar: 5 posts ingepland voor deze week.",
+      "approvalsPending": 0
+    },
+    "casoleo-scripts": {
+      "state": "waiting",
+      "lastRunAt": "2026-11-23T18:00:12+01:00",
+      "lastRunStatus": "succeeded",
+      "summary": "Script voor de nieuwe video staat klaar; wacht op jouw opname.",
+      "approvalsPending": 1
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "departments": [
+    { "id": "optima", "name": "Optima Isolatie", "colors": { "main": "#3A6EA5", "accent": "#F28C28" } },
+    { "id": "dih", "name": "Duurzaam In Huis", "colors": { "main": "#FF5733", "accent": "#76AC0D" } },
+    { "id": "casoleo", "name": "Casoleo", "colors": { "main": "#1B2A4A", "accent": "#F28C28", "accent2": "#FFC23D" } }
+  ],
+  "agents": [
+    {
+      "id": "optima-lead-intake",
+      "name": "Lead-intake",
+      "department": "optima",
+      "role": "realtime",
+      "description": "Verwerkt elke nieuwe lead direct en zet hem klaar voor opvolging",
+      "schedule": "Bij elke nieuwe lead (via Make)",
+      "triggerName": "Optima – Lead-intake",
+      "triggerMatch": "exact",
+      "planned": true
+    },
+    {
+      "id": "optima-opvolging",
+      "name": "Opvolging",
+      "department": "optima",
+      "role": "opvolging",
+      "description": "Bewaakt het belritme en stuurt herinneringen",
+      "schedule": "Elk uur, 08:00–20:00",
+      "triggerName": "Optima – Opvolging",
+      "triggerMatch": "exact",
+      "planned": true
+    },
+    {
+      "id": "optima-weer",
+      "name": "Weer",
+      "department": "optima",
+      "role": "weer",
+      "description": "Checkt de weersverwachting en stelt passende acties voor",
+      "schedule": "Dagelijks 06:00",
+      "triggerName": "Optima – Weer",
+      "triggerMatch": "exact",
+      "planned": true
+    },
+    {
+      "id": "optima-content",
+      "name": "Content",
+      "department": "optima",
+      "role": "content",
+      "description": "Plant en schrijft de content voor de komende week",
+      "schedule": "Zondag",
+      "triggerName": "Optima – Content",
+      "triggerMatch": "exact",
+      "planned": true
+    },
+    {
+      "id": "optima-ads",
+      "name": "Ads-analist",
+      "department": "optima",
+      "role": "ads",
+      "description": "Analyseert de advertenties en signaleert wat beter kan",
+      "schedule": "Dagelijks 07:00",
+      "triggerName": "Optima – Ads-analist",
+      "triggerMatch": "exact",
+      "planned": true
+    },
+    {
+      "id": "optima-creative",
+      "name": "Creative",
+      "department": "optima",
+      "role": "content",
+      "description": "Bedenkt nieuwe advertentieteksten en beeldideeën",
+      "schedule": "Wekelijks",
+      "triggerName": "Optima – Creative",
+      "triggerMatch": "exact",
+      "planned": true
+    },
+    {
+      "id": "optima-seo",
+      "name": "SEO",
+      "department": "optima",
+      "role": "seo",
+      "description": "Controleert de vindbaarheid van de website en stelt verbeteringen voor",
+      "schedule": "Wekelijks",
+      "triggerName": "Optima – SEO",
+      "triggerMatch": "exact",
+      "planned": true
+    },
+    {
+      "id": "optima-reviews",
+      "name": "Reviews",
+      "department": "optima",
+      "role": "reviews",
+      "description": "Houdt nieuwe reviews bij en zet antwoorden klaar",
+      "schedule": "Dagelijks",
+      "triggerName": "Optima – Reviews",
+      "triggerMatch": "exact",
+      "planned": true
+    },
+    {
+      "id": "optima-briefing",
+      "name": "Briefing",
+      "department": "optima",
+      "role": "briefing",
+      "description": "Stuurt Kelvin elke ochtend de dagelijkse briefing",
+      "schedule": "Dagelijks 08:30, maandag weekrapport",
+      "triggerName": "Optima – Briefing",
+      "triggerMatch": "exact",
+      "planned": true
+    },
+    {
+      "id": "dih-instagram",
+      "name": "Instagram-planner",
+      "shortName": "Insta-planner",
+      "department": "dih",
+      "role": "planning",
+      "description": "Plant Instagram-posts rond bijzondere weermomenten",
+      "schedule": "Dagelijks 06:45",
+      "triggerName": "DIH Instagram weermomenten",
+      "triggerMatch": "exact",
+      "planned": false
+    },
+    {
+      "id": "casoleo-instagram",
+      "name": "Instagram-weekplanning",
+      "shortName": "Weekplanning",
+      "department": "casoleo",
+      "role": "planning",
+      "description": "Maakt elke zondag de Instagram-planning voor de week",
+      "schedule": "Zondag 09:58",
+      "triggerName": "Casoleo Instagram weekplanning",
+      "triggerMatch": "exact",
+      "planned": false
+    },
+    {
+      "id": "casoleo-scripts",
+      "name": "Script-assistent",
+      "shortName": "Scripts",
+      "department": "casoleo",
+      "role": "content",
+      "description": "Herinnert aan het inspreken van scripts en zet de tekst klaar",
+      "schedule": "Eenmalige herinneringen",
+      "triggerName": "Casoleo inspreek-scripts",
+      "triggerMatch": "prefix",
+      "planned": false
+    }
+  ]
+}
