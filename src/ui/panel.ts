@@ -1,5 +1,6 @@
 import { formatCountdown, formatRunTime, humanSchedule } from '../time';
 import type { AgentView } from '../types';
+import { cached, decryptTodo, getPass, setPass } from '../data/crypto';
 import { h, ROLE_LABEL, runStatusLabel, STATE_LABEL } from './labels';
 
 /** Zijpaneel (desktop) / onderblad (telefoon) met de details van één agent. */
@@ -7,6 +8,8 @@ export class Panel {
   private el: HTMLElement;
   private lastFocus: Element | null = null;
   id: string | null = null;
+  private view: AgentView | null = null;
+  private unlockError = '';
 
   constructor(private onClose: () => void) {
     this.el = document.getElementById('panel')!;
@@ -32,6 +35,7 @@ export class Panel {
   }
 
   render(v: AgentView): void {
+    this.view = v;
     const a = v.config;
     const s = v.status;
     const c = v.dept.colors;
@@ -66,9 +70,7 @@ export class Panel {
         h('dt', {}, 'Open goedkeuringen'),
         h('dd', { class: s && s.approvalsPending > 0 ? 'warn' : '' }, String(s?.approvalsPending ?? 0)),
       ),
-      s?.todo?.length
-        ? h('section', { class: 'todo' }, h('h3', {}, 'Vandaag oppakken'), h('ol', {}, ...s.todo.map((t) => h('li', {}, t))))
-        : null,
+      this.todoSection(v),
       h('h3', {}, 'Laatste samenvatting'),
       h('p', { class: 'summary' }, s?.summary ?? 'Nog geen samenvatting.'),
       s?.runUrl
@@ -79,6 +81,63 @@ export class Panel {
     const focused = this.el.contains(document.activeElement) ? (document.activeElement as HTMLElement).className : null;
     this.el.replaceChildren(body);
     if (focused) (body.querySelector(`.${focused.split(' ')[0]}`) as HTMLElement | null)?.focus();
+  }
+
+  /** "Vandaag oppakken": met namen als het wachtwoord bekend is, anders de anonieme regels. */
+  private todoSection(v: AgentView): HTMLElement | null {
+    const s = v.status;
+    const enc = s?.todoEnc;
+    const pass = enc ? getPass() : null;
+    const named = enc ? cached(enc) : undefined;
+    if (enc && pass && !named) {
+      decryptTodo(enc, pass)
+        .then(() => {
+          this.unlockError = '';
+          if (this.id === v.config.id && this.view) this.render(this.view);
+        })
+        .catch(() => {
+          setPass(null);
+          this.unlockError = 'Onjuist wachtwoord.';
+          if (this.id === v.config.id && this.view) this.render(this.view);
+        });
+    }
+    const lines = named ?? s?.todo ?? [];
+    if (!lines.length && !enc) return null;
+    const sec = h('section', { class: 'todo' }, h('h3', {}, 'Vandaag oppakken'));
+    if (lines.length) sec.append(h('ol', {}, ...lines.map((t) => h('li', {}, t))));
+    if (enc && named) {
+      const b = h('button', { class: 'linkish lock', type: 'button' }, 'Namen verbergen op dit apparaat');
+      b.addEventListener('click', () => {
+        setPass(null);
+        this.render(v);
+      });
+      sec.append(b);
+    } else if (enc && !pass) {
+      const input = h('input', { type: 'password', class: 'pass', placeholder: 'Wachtwoord', autocomplete: 'current-password', 'aria-label': 'Wachtwoord om namen te tonen' });
+      const form = h(
+        'form',
+        { class: 'unlock' },
+        input,
+        h('button', { class: 'btn', type: 'submit' }, 'Toon namen'),
+      );
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const val = input.value.trim();
+        if (!val) {
+          this.unlockError = 'Vul het wachtwoord in.';
+          this.render(v);
+          return;
+        }
+        setPass(val);
+        this.unlockError = '';
+        this.render(v);
+      });
+      sec.append(form);
+      if (this.unlockError) sec.append(h('p', { class: 'unlock-err', role: 'alert' }, this.unlockError));
+    } else if (enc) {
+      sec.append(h('p', { class: 'muted-small' }, 'Namen ontsleutelen…'));
+    }
+    return sec;
   }
 
   /** Alleen het aftellen bijwerken (elke seconde), zonder het paneel opnieuw op te bouwen. */

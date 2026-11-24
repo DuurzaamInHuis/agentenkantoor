@@ -80,7 +80,7 @@ Voeg een blok toe aan `agents` in `public/agents.config.json`:
 | `role` | Bepaalt het icoon: `planning` (kalender), `ads` (grafiek), `weer` (wolk), `content` (pen), `seo` (vergrootglas), `reviews` (ster), `opvolging` (telefoon), `briefing` (envelop), `realtime` (tandwiel), `taken` (checklist). |
 | `description` | Eén zin over wat de agent doet. |
 | `schedule` | Schema in gewone taal. "Dagelijks 06:45" wordt in het paneel "elke dag om 06:45". |
-| `triggerName` | Naam van de geplande taak in Claude. Hiermee koppelt de status-agent taak en bureau. |
+| `triggerName` | Naam van de routine in Claude. Hiermee koppelt de status-agent routine en bureau. Meerdere namen kan met `\|` ertussen, bijvoorbeeld `Casoleo inspreek-scripts\|Casoleo scripts`. |
 | `triggerMatch` | `exact` (naam moet precies kloppen) of `prefix` (taaknaam begint met `triggerName`, handig voor eenmalige taken met een datum in de naam). |
 | `planned` | `true` = nog niet gebouwd. Zolang de agent niet in `status.json` staat, zie je een bureau met "Vacature". |
 
@@ -118,6 +118,7 @@ Afdelingskleuren pas je aan in `departments` (`main`, `accent` en optioneel `acc
 - `summary`: maximaal twee korte regels.
 - `runUrl`: alleen `https://`-links worden getoond.
 - `todo` (optioneel): korte lijst taken die vandaag opgepakt moeten worden, getoond in het paneel onder "Vandaag oppakken". Zonder namen of adressen.
+- `todoEnc` (optioneel): dezelfde lijst mét namen, versleuteld. Alleen zichtbaar na het invullen van het wachtwoord bij **Toon namen** (zie [`docs/status-agent.md`](docs/status-agent.md)).
 - Ontbreekt een agent, dan toont de app "Vacature" (bij `planned: true`) of "Wacht op volgende run" met "geen data".
 - `done` wordt na 15 minuten (gerekend vanaf `lastRunAt`) automatisch als `idle` getoond.
 - Is `updatedAt` ouder dan 2 uur, dan kleurt "Status bijgewerkt …" oranje.

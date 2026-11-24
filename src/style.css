@@ -195,6 +195,10 @@ tr.s-error { background: #ffe9e7; }
 .todo ol { margin: 0 0 14px; padding-left: 22px; font-size: 14px; }
 .todo li { margin: 0 0 4px; }
 .todo li::marker { color: var(--muted); }
+.unlock { display: flex; gap: 8px; margin: 0 0 8px; }
+.unlock .pass { flex: 1; min-width: 0; font: inherit; font-size: 14px; padding: 6px 8px; border: 1px solid #c9bba8; border-radius: 6px; background: #fff; }
+.unlock-err { color: #b3261e; font-size: 13px; margin: 0 0 10px; }
+.muted-small, .todo .lock { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
 .summary {
   margin: 0 0 16px;
   display: -webkit-box;

@@ -44,6 +44,16 @@ export interface AgentStatus {
   runUrl?: string;
   /** Optioneel: korte lijst taken die Kelvin vandaag moet oppakken (zonder klantgegevens). */
   todo?: string[];
+  /** Optioneel: dezelfde taken mét namen, versleuteld (alleen leesbaar met Kelvins wachtwoord). */
+  todoEnc?: EncryptedTodo;
+}
+
+export interface EncryptedTodo {
+  v: 1;
+  iter: number;
+  salt: string;
+  iv: string;
+  ct: string;
 }
 
 export interface StatusFile {

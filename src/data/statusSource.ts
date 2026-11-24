@@ -1,4 +1,4 @@
-import { AGENT_STATES, type AgentState, type AgentStatus, type StatusFile } from '../types';
+import { AGENT_STATES, type AgentState, type AgentStatus, type EncryptedTodo, type StatusFile } from '../types';
 
 /** Haalt status.json op met een cache-buster, zodat CDN- en browsercaches worden omzeild. */
 export async function fetchStatus(url: string): Promise<StatusFile> {
@@ -24,6 +24,17 @@ const isDate = (v: unknown): v is string => typeof v === 'string' && !Number.isN
 const clip = (v: unknown, max: number): string | undefined =>
   typeof v === 'string' && v.trim() ? v.trim().slice(0, max) : undefined;
 
+const B64 = /^[A-Za-z0-9+/=]+$/;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function parseEnc(e: any): EncryptedTodo | undefined {
+  if (!e || e.v !== 1) return undefined;
+  const iter = Number(e.iter);
+  const ok = (s: unknown, max: number) => typeof s === 'string' && s.length <= max && B64.test(s);
+  if (!Number.isInteger(iter) || iter < 10_000 || iter > 5_000_000) return undefined;
+  if (!ok(e.salt, 64) || !ok(e.iv, 32) || !ok(e.ct, 20_000)) return undefined;
+  return { v: 1, iter, salt: e.salt, iv: e.iv, ct: e.ct };
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function parseStatus(raw: any): StatusFile {
   if (!raw || typeof raw !== 'object') throw new Error('leeg of ongeldig bestand');
@@ -48,6 +59,7 @@ export function parseStatus(raw: any): StatusFile {
         todo: Array.isArray(v.todo)
           ? v.todo.map((t: unknown) => clip(t, 100)).filter((t: string | undefined): t is string => !!t).slice(0, 8)
           : undefined,
+        todoEnc: parseEnc(v.todoEnc),
         runUrl: typeof v.runUrl === 'string' && /^https:\/\//i.test(v.runUrl) ? v.runUrl : undefined,
       };
     }

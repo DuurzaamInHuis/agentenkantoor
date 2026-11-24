@@ -148,7 +148,7 @@
       "role": "content",
       "description": "Herinnert aan het inspreken van scripts en zet de tekst klaar",
       "schedule": "Eenmalige herinneringen",
-      "triggerName": "Casoleo inspreek-scripts",
+      "triggerName": "Casoleo inspreek-scripts|Casoleo scripts",
       "triggerMatch": "prefix",
       "planned": false
     }
