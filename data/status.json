@@ -1,4 +1,42 @@
 {
-  "updatedAt": "2026-11-24T13:31:13+01:00",
-  "agents": {}
+  "updatedAt": "2026-11-24T14:36:32+01:00",
+  "agents": {
+    "dih-instagram": {
+      "state": "error",
+      "lastRunAt": "2026-11-17T05:46:22Z",
+      "lastRunStatus": "failed",
+      "nextRunAt": "2026-11-25T05:45:00Z",
+      "summary": "Laatste run mislukt: Claude Code-toegang geweigerd door een organisatie-instelling (authenticatiefout). Sinds 17-11 geen nieuwe runs.",
+      "approvalsPending": 0,
+      "runUrl": "https://claude.ai/code/session_01JMpixbujRE72SDVUo5AvJP"
+    },
+    "dih-dashboard": {
+      "state": "waiting",
+      "nextRunAt": "2026-11-25T05:47:00Z",
+      "summary": "Nog geen runs geregistreerd voor deze routine. 5 urgente taken voor vandaag.",
+      "approvalsPending": 5,
+      "todo": [
+        "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
+        "Lead spouwmuurisolatie: installateur bellen (deadline verlopen)",
+        "Lead kozijnen: reactie afwachten (urgentie hoog)",
+        "Lead energielabel: label afmaken (urgentie hoog)",
+        "DIH administratie: kosten opheffen (urgentie hoog)"
+      ]
+    },
+    "casoleo-instagram": {
+      "state": "waiting",
+      "lastRunAt": "2026-11-22T09:04:43Z",
+      "lastRunStatus": "succeeded",
+      "nextRunAt": "2026-11-29T08:58:00Z",
+      "summary": "2 carrousels staan als concept klaar in Publora, wachten op 'plan in'. Voor de volgende Reel is nog een ingesproken opname nodig.",
+      "approvalsPending": 2,
+      "runUrl": "https://claude.ai/code/session_01JMpixcRu8mBPRKZgWWEtbP"
+    },
+    "casoleo-scripts": {
+      "state": "idle",
+      "nextRunAt": "2026-11-26T08:00:00Z",
+      "summary": "Nog geen runs geregistreerd. Volgende geplande run: scripts 7 en 8.",
+      "approvalsPending": 0
+    }
+  }
 }
