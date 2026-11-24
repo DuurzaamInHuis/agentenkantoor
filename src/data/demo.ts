@@ -10,9 +10,11 @@ const SUMMARIES: Record<string, string[]> = {
   reviews: ['2 nieuwe reviews (5 en 4 sterren), antwoorden klaargezet.', 'Geen nieuwe reviews.'],
   opvolging: ['6 leads gecheckt, 2 herinneringen verstuurd.', 'Belritme op schema, niets te doen.'],
   briefing: ['Dagelijkse briefing verstuurd.', 'Weekrapport klaar en verstuurd.'],
+  taken: ['Dashboard ververst: 2 nieuwe opdrachten, 4 open taken.', 'Dashboard ververst, niets nieuws in de bronbestanden.'],
   realtime: ['Nieuwe lead verwerkt en ingedeeld.', 'Lead-flow draait, geen achterstand.'],
 };
 const ERRORS = ['Run mislukt: verbinding met de bron verliep (time-out).', 'Run mislukt: toegang tot de koppeling verlopen.'];
+const DEMO_TODO = ['Lead spouwmuurisolatie nabellen (deadline vandaag)', 'Offerte vloerisolatie versturen', 'Energielabel-opname inplannen', 'ISDE-aanvraag afronden'];
 const WAITING = ['Wacht op jouw akkoord voor de geplande posts.', 'Vraag voor Kelvin: welk budget voor volgende week?'];
 
 const FROM_WORKING: [AgentState, number][] = [['done', 50], ['waiting', 22], ['error', 10], ['idle', 18]];
@@ -88,6 +90,11 @@ export class DemoSource {
     } else if (state === 'waiting') {
       s.approvalsPending = 1 + Math.floor(Math.random() * 3);
       s.summary = pick(WAITING);
+      if (a.role === 'taken') {
+        s.todo = DEMO_TODO.slice(0, s.approvalsPending + 1);
+        s.approvalsPending = s.todo.length;
+        s.summary = `${s.todo.length} urgente taken voor vandaag.`;
+      }
     } else if (state === 'working') {
       s.lastRunStatus = 'running';
       s.lastRunAt = iso(now - Math.random() * 60_000);

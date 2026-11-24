@@ -20,6 +20,7 @@ export const ROLE_LABEL: Record<string, string> = {
   opvolging: 'Opvolging',
   briefing: 'Briefing',
   realtime: 'Realtime lead-flow',
+  taken: 'Takenlijst',
 };
 
 export function runStatusLabel(s?: string): string {

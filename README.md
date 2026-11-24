@@ -13,7 +13,7 @@ De app schrijft zelf niets en heeft geen backend. Hij leest twee bestanden:
 | Bestand | Wie past het aan | Wat staat erin |
 | --- | --- | --- |
 | `public/agents.config.json` | Kelvin, met de hand | Welke afdelingen en agents er zijn |
-| `data/status.json` | De status-agent, elk uur | De live stand van alle agents |
+| `data/status.json` | De status-agent, elk uur (leest je cloud-routines) | De live stand van alle agents |
 
 ## Wat de poppetjes doen
 
@@ -77,7 +77,7 @@ Voeg een blok toe aan `agents` in `public/agents.config.json`:
 | `id` | Unieke sleutel. Dezelfde sleutel gebruikt de status-agent in `status.json`. |
 | `name` / `shortName` | Naam in het paneel; `shortName` (optioneel) is voor het kleine naambordje op het bureau. |
 | `department` | `id` van een afdeling uit `departments`. |
-| `role` | Bepaalt het icoon: `planning` (kalender), `ads` (grafiek), `weer` (wolk), `content` (pen), `seo` (vergrootglas), `reviews` (ster), `opvolging` (telefoon), `briefing` (envelop), `realtime` (tandwiel). |
+| `role` | Bepaalt het icoon: `planning` (kalender), `ads` (grafiek), `weer` (wolk), `content` (pen), `seo` (vergrootglas), `reviews` (ster), `opvolging` (telefoon), `briefing` (envelop), `realtime` (tandwiel), `taken` (checklist). |
 | `description` | Eén zin over wat de agent doet. |
 | `schedule` | Schema in gewone taal. "Dagelijks 06:45" wordt in het paneel "elke dag om 06:45". |
 | `triggerName` | Naam van de geplande taak in Claude. Hiermee koppelt de status-agent taak en bureau. |
@@ -102,6 +102,12 @@ Afdelingskleuren pas je aan in `departments` (`main`, `accent` en optioneel `acc
       "summary": "Geen weermoment vandaag, niets ingepland.",
       "approvalsPending": 0,
       "runUrl": "https://claude.ai/..."
+    },
+    "dih-dashboard": {
+      "state": "waiting",
+      "summary": "Dashboard ververst. 2 urgente taken voor vandaag.",
+      "approvalsPending": 2,
+      "todo": ["Lead spouwmuurisolatie: terugbellen (vandaag)", "DIH administratie: offerte afronden (morgen)"]
     }
   }
 }
@@ -111,6 +117,7 @@ Afdelingskleuren pas je aan in `departments` (`main`, `accent` en optioneel `acc
 - `lastRunStatus`: `succeeded`, `failed` of `running`.
 - `summary`: maximaal twee korte regels.
 - `runUrl`: alleen `https://`-links worden getoond.
+- `todo` (optioneel): korte lijst taken die vandaag opgepakt moeten worden, getoond in het paneel onder "Vandaag oppakken". Zonder namen of adressen.
 - Ontbreekt een agent, dan toont de app "Vacature" (bij `planned: true`) of "Wacht op volgende run" met "geen data".
 - `done` wordt na 15 minuten (gerekend vanaf `lastRunAt`) automatisch als `idle` getoond.
 - Is `updatedAt` ouder dan 2 uur, dan kleurt "Status bijgewerkt …" oranje.

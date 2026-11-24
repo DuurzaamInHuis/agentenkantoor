@@ -192,6 +192,9 @@ tr.s-error { background: #ffe9e7; }
 .facts dd { margin: 0; }
 .countdown { color: var(--muted); }
 .panel h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; color: var(--muted); margin: 0 0 4px; }
+.todo ol { margin: 0 0 14px; padding-left: 22px; font-size: 14px; }
+.todo li { margin: 0 0 4px; }
+.todo li::marker { color: var(--muted); }
 .summary {
   margin: 0 0 16px;
   display: -webkit-box;

@@ -66,6 +66,9 @@ export class Panel {
         h('dt', {}, 'Open goedkeuringen'),
         h('dd', { class: s && s.approvalsPending > 0 ? 'warn' : '' }, String(s?.approvalsPending ?? 0)),
       ),
+      s?.todo?.length
+        ? h('section', { class: 'todo' }, h('h3', {}, 'Vandaag oppakken'), h('ol', {}, ...s.todo.map((t) => h('li', {}, t))))
+        : null,
       h('h3', {}, 'Laatste samenvatting'),
       h('p', { class: 'summary' }, s?.summary ?? 'Nog geen samenvatting.'),
       s?.runUrl

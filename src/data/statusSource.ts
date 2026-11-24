@@ -45,6 +45,9 @@ export function parseStatus(raw: any): StatusFile {
         summary: clip(v.summary, 280),
         approvalsPending: Number.isFinite(approvals) ? Math.max(0, Math.floor(approvals)) : 0,
         // Alleen https-links, zodat er nooit een javascript:-link in het paneel komt.
+        todo: Array.isArray(v.todo)
+          ? v.todo.map((t: unknown) => clip(t, 100)).filter((t: string | undefined): t is string => !!t).slice(0, 8)
+          : undefined,
         runUrl: typeof v.runUrl === 'string' && /^https:\/\//i.test(v.runUrl) ? v.runUrl : undefined,
       };
     }

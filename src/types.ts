@@ -42,6 +42,8 @@ export interface AgentStatus {
   summary?: string;
   approvalsPending: number;
   runUrl?: string;
+  /** Optioneel: korte lijst taken die Kelvin vandaag moet oppakken (zonder klantgegevens). */
+  todo?: string[];
 }
 
 export interface StatusFile {

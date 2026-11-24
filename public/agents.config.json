@@ -1,6 +1,6 @@
 {
   "departments": [
-    { "id": "optima", "name": "Optima Isolatie", "colors": { "main": "#3A6EA5", "accent": "#F28C28" } },
+    { "id": "optima", "name": "Optima Isolatie", "colors": { "main": "#2E7D32", "accent": "#7CB918", "accent2": "#22252B" } },
     { "id": "dih", "name": "Duurzaam In Huis", "colors": { "main": "#FF5733", "accent": "#76AC0D" } },
     { "id": "casoleo", "name": "Casoleo", "colors": { "main": "#1B2A4A", "accent": "#F28C28", "accent2": "#FFC23D" } }
   ],
@@ -113,6 +113,18 @@
       "description": "Plant Instagram-posts rond bijzondere weermomenten",
       "schedule": "Dagelijks 06:45",
       "triggerName": "DIH Instagram weermomenten",
+      "triggerMatch": "exact",
+      "planned": false
+    },
+    {
+      "id": "dih-dashboard",
+      "name": "Dashboard-assistent",
+      "shortName": "Dashboard",
+      "department": "dih",
+      "role": "taken",
+      "description": "Ververst elke ochtend het DIH-dashboard en zet klaar welke taken vandaag urgent zijn",
+      "schedule": "Dagelijks 06:47",
+      "triggerName": "Dashboard Duurzaam In Huis dagelijks verversen",
       "triggerMatch": "exact",
       "planned": false
     },

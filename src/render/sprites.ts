@@ -185,6 +185,7 @@ const ICONS: Record<string, string[]> = {
   reviews: ['...yy...', '...yy...', 'yyyyyyyy', '.yyyyyy.', '..yyyy..', '.yyyyyy.', '.yy..yy.', 'y......y'],
   opvolging: ['........', '.kkkkkk.', 'kkk..kkk', 'kk....kk', '..kkkk..', '.kkrrkk.', '.krrrrk.', '.kkkkkk.'],
   briefing: ['........', 'kkkkkkkk', 'kwkwwkwk', 'kwwkkwwk', 'kwwwwwwk', 'kwwwwwwk', 'kkkkkkkk', '........'],
+  taken: ['.kkkkkk.', 'kwwwwwwk', 'kGwkkkwk', 'kwwwwwwk', 'kGwkkkwk', 'kwwwwwwk', 'krwkkkwk', 'kkkkkkkk'],
   realtime: ['...gg...', '.g.gg.g.', '..gggg..', 'gggkkggg', 'gggkkggg', '..gggg..', '.g.gg.g.', '...gg...'],
 };
 
