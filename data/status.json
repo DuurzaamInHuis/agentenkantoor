@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T21:10:28+01:00",
+  "updatedAt": "2026-11-24T22:11:04+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -17,7 +17,7 @@
     "dih-dashboard": {
       "state": "waiting",
       "nextRunAt": "2026-11-25T05:47:00Z",
-      "summary": "Routine is vandaag aangemaakt; eerste run morgen om 06:47. 5 urgente taken voor vandaag.",
+      "summary": "Nog niet gedraaid; eerste run morgen om 06:47. 5 urgente taken voor vandaag.",
       "approvalsPending": 5,
       "todo": [
         "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
@@ -29,9 +29,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "viHb0ZRsTf6QklqGWY4UzA==",
-        "iv": "Y2u6RfOIPcfU3qSV",
-        "ct": "AZTCMSpUri2ARUtsLVgwuSaYKrq2mBNlV3QQy6/pOGPNpCE3PiBAnsE2Mw3pYyMt+Nax7doZ3GaY+lWYrrlVG3+x1vvGeedcPTjMCoUbYgUR2RcWUO1nBabRj7n5piraya6X2uOgvFuzFN04eZOGFW4CHm7Y4IFjLClZk+iZ6bkV45gq0c4kVSjA68WNzVPwNd1N5LWW4QM1+4iUyTx1yBYS7JR1opYXddN6LgKJt00fwzJQXwi4nxVwxTLHz9ToRmI2P+bKK0mS2lSc3G0x5TfnRB75Btm57sVSXEuvfT6RH9grUS6TYl9cZQtcGmQ2o1MGhHzU5jje5WEHPwgmn+FLsQaRMD9ffsLCcc9eDMYF2Mb/iMP76YR+LDWEjk4wZN6vryRHG4sFXM0BpV8RnvZf2keY57mOP2K/3VlJw8OevCeivkiffeiW"
+        "salt": "4Ibc/RpBUn8z3Pfg/HumEQ==",
+        "iv": "xOiHVib3o2gRRETf",
+        "ct": "2XKnEbiBiGgtAoqCtO1v2sa3zrSLkND1XpAVzmeXb4lIzoJCaVTamrHA1Jn9w+OQXVEhKl1vUBAQDWk+GfXXaTkisc++nb3W4UjWsLXmJLH2CL1Pe0fMa21ZVcad2GZVF3H9mcDC4I4KNmbX0vHknaTGOWLOlLu0khq1ZLrwoLd+wF1aeSH+b+DwZBm2cX3xW/60Y6INhYIPKdAZz1KrbYNrUDdtkZNEz+g88MMD4JD+38ELqRT1FCH8BkjJFwmsnRWEczSBpyvus29wJ+RUy8J1NScSWORKPiak7A+Wc882IKq4dLyu6xVsry7Xg0tHvuav9HhP14x5HyqSlW9JBPCyMarwyudLF46qBoXGrKikoyy+mQsnujyGjuOw+3HdyqrUf+E+m115aShdTqWlXop5rGrzbh6fDUKTahVtFj0EV34TiMFXDkAA"
       }
     },
     "casoleo-instagram": {
