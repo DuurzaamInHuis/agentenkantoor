@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T14:36:32+01:00",
+  "updatedAt": "2026-11-24T15:06:29+01:00",
   "agents": {
     "dih-instagram": {
       "state": "error",
@@ -33,9 +33,8 @@
       "runUrl": "https://claude.ai/code/session_01JMpixcRu8mBPRKZgWWEtbP"
     },
     "casoleo-scripts": {
-      "state": "idle",
-      "nextRunAt": "2026-11-26T08:00:00Z",
-      "summary": "Nog geen runs geregistreerd. Volgende geplande run: scripts 7 en 8.",
+      "state": "paused",
+      "summary": "Alle 3 routines voor inspreek-scripts staan uit. Nog geen runs geregistreerd.",
       "approvalsPending": 0
     }
   }
