@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-24T18:13:21+01:00",
+  "updatedAt": "2026-11-24T19:10:53+01:00",
   "agents": {
+    "optima-content": {
+      "state": "idle",
+      "nextRunAt": "2026-11-29T08:46:00Z",
+      "summary": "Vandaag aangemaakt; eerste run zondag om 09:46.",
+      "approvalsPending": 0
+    },
     "dih-instagram": {
       "state": "idle",
       "lastRunAt": "2026-11-24T05:45:49Z",
@@ -23,9 +29,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "sEpConI6Qb/O4vR6BCkBmA==",
-        "iv": "5FejhSNMCCMZjE/r",
-        "ct": "8W7in0HcoXX4CraG4bR+OnPsIQl15gVn7fFHgMHZiKMHOGONWPlvaHFh92v2CffLosccfOeO9Y9CaYH7kArCm1pInweaz/BRUYKbd+fqK8F8pslYYs3xpROPLZGtwqB/68NpIORvB0N0KLpQa7ABSZfyE1Cbe6EbnYz/DI0KKin7HFgW7ndOFvRkIHsHCJKcBzFikYP8JVPofOTBOkeo/eMbs1KvSUYipv5u+v4V1hm/84BluDhV2rCSiNURWepvpJbwtJWcxoLnkgPivDMPdC4zWM2W8Kk1hydth1OpeAYuySCMa2qLNIhJNb+vb05qDMWp5sDhp4xC5+g9XXUZufj/9iOKLxzA4xf4WgCWUIYvfKlNlDFkeR/4sBcRNN2Yks2+UZl49MkSYV4ERQ+6o8EPzoM/gPerNfiXyoT4+GbhnDkRd9arkC3l"
+        "salt": "IiP+EUzIPdE/v3tOLMSbiw==",
+        "iv": "1UHihgPWe3Fe6aDv",
+        "ct": "w0atFVTKTMH4SOm8WYm/tUkDfLwVsyDSFdv1lS4sVkaX7n6lWEOxY5G7Hu+tlRuywzuxJCowD+IceOH+Asl2mBPvnWZ8+aWh/i+xb32yWTKY9gQjDTZTsnlcPyYVzl4W/vN53qW+Fcpe25bPxpzGrLXOurbL1pO+BIqTTBOu62KbxBaNa9ltUB+YD+fja8cvw4WOCwEwlj86ZrjlXdp6DM3pFwmkQ8/R8cVn/pLlri4wxFYHGxnQMTX0iR39DU5Vs+NwNKKpBzzSklLPBcyizUp9MHR2trgssVZ242T0HDM28blJqEySMN9sjjjv6u4y69DKPdrlp34jACpvFOENMy6Oww9ECWXTC9qgHgcqE3xw8zC6qMXMR8kc9DdzCuWvIj9b7P/LJVbW2IISy/3qPdqiAwqYifXiCjSqgJhrM5Nm70r253eT8h5L"
       }
     },
     "casoleo-instagram": {
