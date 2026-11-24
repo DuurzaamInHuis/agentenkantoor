@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-11-24T23:10:25+01:00",
+  "updatedAt": "2026-11-25T00:10:36+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
       "nextRunAt": "2026-11-29T08:46:00Z",
-      "summary": "Vandaag aangemaakt; eerste run zondag om 09:46.",
+      "summary": "Nog niet gedraaid; eerste run zondag om 09:46.",
       "approvalsPending": 0
     },
     "dih-instagram": {
       "state": "idle",
       "lastRunAt": "2026-11-24T05:45:49Z",
       "nextRunAt": "2026-11-25T05:45:00Z",
-      "summary": "Gestart om 06:45; de chat staat in Cowork. Volgende run morgen 06:45.",
+      "summary": "Gisteren gestart om 06:45; de chat staat in Cowork. Volgende run vandaag 06:45.",
       "approvalsPending": 0
     },
     "dih-dashboard": {
       "state": "waiting",
       "nextRunAt": "2026-11-25T05:47:00Z",
-      "summary": "Nog niet gedraaid; eerste run morgen om 06:47. 5 urgente taken voor vandaag.",
+      "summary": "Nog niet gedraaid; eerste run vandaag om 06:47. 5 urgente taken voor vandaag.",
       "approvalsPending": 5,
       "todo": [
         "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
@@ -29,9 +29,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "q8wYBGWCA8f0bVewIWeksw==",
-        "iv": "aC+ZPSlFPyiG9PbY",
-        "ct": "LTYYC80B8mJxkYM7JlzSmCQt9/zV7f3R3i4RHpoB91S2cnJ/rEp8/azUIYcAmiWyqFhtJ7rHGapWrh2U1oRdQzV5tmXuMxQn/xWmYo7ToGRMuBbl22An2yWv4RQNXievxi40VS/Lf+bVTFCPQYLG0LOs2nZKGXAklJcstiQn3qQLWwRqO601lfTIdEt6gm+2gka6F+4PU1TDEyrqFjsjqAyh991rC7nDm/xnQSMfjv6FvzrpC+iMADYCBaSYtsbYW6JgfsFwucXjPJ41Ml8ATeKSI+NKeFbuRsGwwUIXBG6Dy0e0kuJxOomYrOufT51SsUCWsL/gwE1SoLwEIvlf6OFsUYk4EvOUder0bhR8oRGXonJSBdWHwc1QgxmHFA+fh0+ykbMPBBATOklnDM3b8dek3fyePXVIigvid2uC1TTytcSH8jDEwOWF"
+        "salt": "J+eBC1L+5ErTqplTjSZTcQ==",
+        "iv": "jHEMUQGRtvsZ6shF",
+        "ct": "gbYkk4BGtqhgwVZzdiBTsHLsnFvTHbRXisYXQtwm3gStUVovPjIhd6L7fWWEY+RZj5pFpV969UF6J+JyyScxS//7wPK/RgcWF0aZq8ZQL7Ve3/aUOhRhtNyaMEQq4Uojvejv2EoEARsNyLwUKnQ88IWKEGzftZFjADep+2ZRpeBK+kTYUWcC9G7w0ORztL0x513WSYqrXoJlUUmcQyOj5JxNOwvarbKPISIasz3u/dUSPyMtTG7GJCDJZKoHKGluhT7B/ma7QHS+XEWncDj6yaxmdQ1/zT9zsVuoUChwhDw2STJ0gue9lJNI+3snWq44kp5QT9AUdM13NOLAQ/JMm6z3g+t/MZoeqh2kGAekizij3wGvCOxPlSvAwUHEbOIhPnaRh7BxM1WeuTls43B6waxlM9QB7tyLdDwOpr03bBj7nI6DAe/sF/qi"
       }
     },
     "casoleo-instagram": {
@@ -47,7 +47,7 @@
       "state": "idle",
       "lastRunAt": "2026-11-24T08:01:02Z",
       "lastRunStatus": "succeeded",
-      "summary": "Scripts voor video 3 en 4 vanochtend gestuurd. Op verzoek zijn de overige herinneringen stopgezet; geen nieuwe runs gepland.",
+      "summary": "Scripts voor video 3 en 4 gisterochtend gestuurd. Overige herinneringen zijn stopgezet; geen nieuwe runs gepland.",
       "approvalsPending": 0
     }
   }
