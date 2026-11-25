@@ -204,19 +204,6 @@ tr.s-error { background: #ffe9e7; }
 .unlock .pass { flex: 1; min-width: 0; font: inherit; font-size: 14px; padding: 6px 8px; border: 1px solid #c9bba8; border-radius: 6px; background: #fff; }
 .unlock-err { color: #b3261e; font-size: 13px; margin: 0 0 10px; }
 .muted-small, .todo .lock { color: var(--muted); font-size: 13px; margin: 0 0 12px; }
-.posts { margin: 0 0 14px; }
-.posts-toggle { width: 100%; text-align: left; padding: 6px 12px; font-size: 14px; }
-.muted-inline { font-size: 13px; font-weight: 400; opacity: 0.75; }
-.post-list { list-style: none; margin: 8px 0 0; padding: 0; font-size: 14px; }
-.post-list li { display: grid; grid-template-columns: auto auto 1fr; gap: 2px 8px; align-items: center; padding: 7px 0; border-bottom: 1px solid #e6dccd; }
-.post-list li:last-child { border-bottom: 0; }
-.post-list li:not(.is-video) { opacity: 0.7; }
-.post-when { font-weight: 600; }
-.post-tag { font-size: 12px; padding: 1px 7px; border-radius: 999px; }
-.post-tag.t-scheduled { background: #dcefd9; color: #1f5e22; }
-.post-tag.t-draft { background: #f6e7c6; color: #7a5410; }
-.post-kind { color: var(--muted); font-size: 12px; }
-.post-title { grid-column: 1 / -1; color: #4d423a; }
 .summary {
   margin: 0 0 16px;
   display: -webkit-box;

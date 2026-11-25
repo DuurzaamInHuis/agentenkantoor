@@ -94,15 +94,6 @@ Alleen als dih-dashboard gekoppeld is. Het dashboard is het Claude-artifact http
   Mislukt het script, laat todoEnc dan weg (todo blijft staan) en meld het in de slotregel.
 - Lukt het lezen van het dashboard niet, laat todo en todoEnc dan weg en ga gewoon door.
 
-STAP 3c – Geplande Instagram-posts voor "casoleo-instagram" en "dih-instagram"
-- Laad de Publora-tools via ToolSearch (zoek op "publora list_posts list_connections"; het zijn tools van de vorm mcp__<id>__list_posts en mcp__<id>__list_connections).
-- list_connections: het Instagram-account met username "casoleo" hoort bij casoleo-instagram, "duurzaaminhuis" bij dih-instagram. Onthoud per account de platformId.
-- Haal twee keer list_posts op met platform "instagram", responseFormat "concise", sortBy "scheduledTime", sortOrder "asc", limit 100: één keer status "scheduled" met fromDate = nu (UTC), en één keer status "draft" (zonder datumfilter). Wijzig, plan of verwijder NOOIT iets in Publora; alleen lezen.
-- Verdeel de posts per account via platforms[].platformId. Laat posts weg met een scheduledTime in het verleden, en concepten ouder dan 30 dagen (createdAt) zonder scheduledTime.
-- Maak per post een object: { "at": scheduledTime (ISO, weglaten als die er niet is), "state": "scheduled" of "draft", "kind": "video" als een mediaUrl op .mp4/.mov eindigt of "/videos/" bevat, "carrousel" bij 2 of meer afbeeldingen, anders "foto", "title": de eerste zin of regel van de caption, zonder emoji en hashtags, maximaal 80 tekens }.
-- Sorteer op at (zonder at achteraan), maximaal 20 per account, en zet de lijst in het veld posts van die agent. Is er niets, zet dan posts: [] (dan toont het kantoor "nog geen posts"). Lukt Publora niet, laat posts weg en ga door.
-- Privacy: titels zijn openbare captions, maar staat er toch een naam van een klant of persoon in, vervang die door "klant".
-
 STAP 4 – Velden per agent
 - state: uit stap 3
 - lastRunAt: start van de nieuwste run (ISO 8601 met tijdzone); weglaten als onbekend
@@ -111,7 +102,6 @@ STAP 4 – Velden per agent
 - summary: maximaal twee korte regels (± 160 tekens) in het Nederlands, op basis van het eindantwoord van de nieuwste run. Bij error: kort wat er misging. Bij dih-dashboard met urgente taken: eindig met "N urgente taken voor vandaag."
 - approvalsPending: getal, 0 als er niets openstaat
 - todo en todoEnc: alleen bij dih-dashboard, zie stap 3b
-- posts: alleen bij casoleo-instagram en dih-instagram, zie stap 3c
 - runUrl: de claude.ai-link van de nieuwste run uit list_runs, alleen als die met https:// begint; anders weglaten. Verzin geen links.
 
 PRIVACY – verplicht
@@ -123,7 +113,7 @@ STAP 5 – Schrijven
   {
     "updatedAt": "<nu, ISO 8601 met tijdzone Europe/Madrid>",
     "agents": {
-      "<agent-id>": { "state": "...", "lastRunAt": "...", "lastRunStatus": "...", "nextRunAt": "...", "summary": "...", "approvalsPending": 0, "todo": ["..."], "todoEnc": { "v": 1, ... }, "posts": [{ "at": "...", "state": "scheduled", "kind": "video", "title": "..." }], "runUrl": "..." }
+      "<agent-id>": { "state": "...", "lastRunAt": "...", "lastRunStatus": "...", "nextRunAt": "...", "summary": "...", "approvalsPending": 0, "todo": ["..."], "todoEnc": { "v": 1, ... }, "runUrl": "..." }
     }
   }
 - Gebruik als sleutels de id's uit public/agents.config.json. Is er geen enkele gekoppelde routine, schrijf dan "agents": {} (maar wel een verse updatedAt).

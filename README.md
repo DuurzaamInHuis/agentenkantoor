@@ -122,7 +122,6 @@ Afdelingskleuren pas je aan in `departments` (`main`, `accent` en optioneel `acc
 - `runUrl`: alleen `https://`-links worden getoond.
 - `todo` (optioneel): korte lijst taken die vandaag opgepakt moeten worden, getoond in het paneel onder "Vandaag oppakken". Zonder namen of adressen.
 - `todoEnc` (optioneel): dezelfde lijst mét namen, versleuteld. Alleen zichtbaar na het invullen van het wachtwoord bij **Toon namen** (zie [`docs/status-agent.md`](docs/status-agent.md)).
-- `posts` (optioneel, Instagram-bureaus): komende posts uit Publora als `{ at, state: "scheduled"|"draft", kind: "video"|"carrousel"|"foto", title }`. In het paneel achter de knop **Geplande video's**.
 - Ontbreekt een agent, dan toont de app "Vacature" (bij `planned: true`) of "Wacht op volgende run" met "geen data".
 - `done` wordt na 15 minuten (gerekend vanaf `lastRunAt`) automatisch als `idle` getoond.
 - Is `updatedAt` ouder dan 2 uur, dan kleurt "Status bijgewerkt …" oranje.

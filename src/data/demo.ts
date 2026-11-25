@@ -95,16 +95,7 @@ export class DemoSource {
         s.approvalsPending = s.todo.length;
         s.summary = `${s.todo.length} urgente taken voor vandaag.`;
       }
-    }
-    if (a.id === 'casoleo-instagram' || a.id === 'dih-instagram') {
-      const day = 86_400_000;
-      s.posts = [
-        { at: iso(now + 0.3 * day), state: 'scheduled', kind: 'video', title: 'IBI-korting met zonnepanelen aan de Costa Blanca' },
-        { at: iso(now + 1.2 * day), state: 'scheduled', kind: 'carrousel', title: 'Je Spaanse stroomrekening ontleed' },
-        { at: iso(now + 3.1 * day), state: 'draft', kind: 'video', title: 'Zonnepanelen zonder Spaans te spreken' },
-      ];
-    }
-    if (state === 'working') {
+    } else if (state === 'working') {
       s.lastRunStatus = 'running';
       s.lastRunAt = iso(now - Math.random() * 60_000);
       s.nextRunAt = undefined;
