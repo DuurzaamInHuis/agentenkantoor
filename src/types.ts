@@ -46,6 +46,15 @@ export interface AgentStatus {
   todo?: string[];
   /** Optioneel: dezelfde taken mét namen, versleuteld (alleen leesbaar met Kelvins wachtwoord). */
   todoEnc?: EncryptedTodo;
+  /** Optioneel: komende Instagram-posts uit Publora (ingepland of concept), oplopend op tijd. */
+  posts?: PlannedPost[];
+}
+
+export interface PlannedPost {
+  at?: string;
+  state: 'scheduled' | 'draft';
+  kind: 'video' | 'carrousel' | 'foto';
+  title: string;
 }
 
 export interface EncryptedTodo {

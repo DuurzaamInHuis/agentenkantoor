@@ -1,8 +1,10 @@
 import { formatCountdown, formatRunTime, humanSchedule } from '../time';
-import type { AgentView } from '../types';
+import type { AgentView, PlannedPost } from '../types';
 import { cached, decryptTodo, getPass, setPass } from '../data/crypto';
 import { markRead, markUnread, NOTIFY_STATES } from '../data/readMarks';
 import { h, ROLE_LABEL, runStatusLabel, STATE_LABEL } from './labels';
+
+const KIND_LABEL: Record<PlannedPost['kind'], string> = { video: 'Video', carrousel: 'Carrousel', foto: 'Foto' };
 
 /** Zijpaneel (desktop) / onderblad (telefoon) met de details van één agent. */
 export class Panel {
@@ -11,6 +13,8 @@ export class Panel {
   id: string | null = null;
   private view: AgentView | null = null;
   private unlockError = '';
+  /** Welk agent-id het post-overzicht open heeft (blijft open bij het verversen). */
+  private postsOpenFor: string | null = null;
 
   constructor(
     private onClose: () => void,
@@ -84,6 +88,7 @@ export class Panel {
         h('dd', { class: s && s.approvalsPending > 0 ? 'warn' : '' }, String(s?.approvalsPending ?? 0)),
       ),
       this.todoSection(v),
+      this.postsSection(v),
       h('h3', {}, 'Laatste samenvatting'),
       h('p', { class: 'summary' }, s?.summary ?? 'Nog geen samenvatting.'),
       s?.runUrl
@@ -94,6 +99,10 @@ export class Panel {
     body.querySelector('.read-btn')?.addEventListener('click', () => {
       if (s) markRead(a.id, s);
       this.onReadChange();
+    });
+    body.querySelector('.posts-toggle')?.addEventListener('click', () => {
+      this.postsOpenFor = this.postsOpenFor === a.id ? null : a.id;
+      this.render(v);
     });
     body.querySelector('.undo-read')?.addEventListener('click', () => {
       markUnread(a.id);
@@ -158,6 +167,40 @@ export class Panel {
     } else if (enc) {
       sec.append(h('p', { class: 'muted-small' }, 'Namen ontsleutelen…'));
     }
+    return sec;
+  }
+
+  /** Knop "Geplande video's" met daaronder (na één klik) de komende posts uit Publora. */
+  private postsSection(v: AgentView): HTMLElement | null {
+    const posts = v.status?.posts;
+    if (!posts) return null;
+    const videos = posts.filter((p) => p.kind === 'video').length;
+    const open = this.postsOpenFor === v.config.id;
+    const sec = h(
+      'section',
+      { class: 'posts' },
+      h(
+        'button',
+        { class: 'btn posts-toggle', type: 'button', 'aria-expanded': String(open) },
+        `${open ? '▾' : '▸'} Geplande video's (${videos})`,
+        posts.length > videos ? h('span', { class: 'muted-inline' }, ` + ${posts.length - videos} andere post${posts.length - videos === 1 ? '' : 's'}`) : null,
+      ),
+    );
+    if (!open) return sec;
+    if (!posts.length) {
+      sec.append(h('p', { class: 'muted-small' }, 'Er staan nog geen posts klaar in Publora.'));
+      return sec;
+    }
+    const row = (p: PlannedPost) =>
+      h(
+        'li',
+        { class: p.kind === 'video' ? 'is-video' : '' },
+        h('span', { class: 'post-when' }, p.at ? formatRunTime(p.at) : 'nog geen tijd'),
+        h('span', { class: `post-tag t-${p.state}` }, p.state === 'scheduled' ? 'Ingepland' : 'Concept'),
+        h('span', { class: 'post-kind' }, KIND_LABEL[p.kind]),
+        h('span', { class: 'post-title' }, p.title),
+      );
+    sec.append(h('ul', { class: 'post-list' }, ...posts.map(row)));
     return sec;
   }
 

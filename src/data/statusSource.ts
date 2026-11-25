@@ -1,4 +1,4 @@
-import { AGENT_STATES, type AgentState, type AgentStatus, type EncryptedTodo, type StatusFile } from '../types';
+import { AGENT_STATES, type AgentState, type AgentStatus, type EncryptedTodo, type PlannedPost, type StatusFile } from '../types';
 
 /** Haalt status.json op met een cache-buster, zodat CDN- en browsercaches worden omzeild. */
 export async function fetchStatus(url: string): Promise<StatusFile> {
@@ -35,6 +35,26 @@ function parseEnc(e: any): EncryptedTodo | undefined {
   return { v: 1, iter, salt: e.salt, iv: e.iv, ct: e.ct };
 }
 
+const POST_STATES = ['scheduled', 'draft'] as const;
+const POST_KINDS = ['video', 'carrousel', 'foto'] as const;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function parsePosts(list: any): PlannedPost[] | undefined {
+  if (!Array.isArray(list)) return undefined;
+  const out: PlannedPost[] = [];
+  for (const p of list) {
+    const title = clip(p?.title, 90);
+    if (!title || !POST_STATES.includes(p.state)) continue;
+    out.push({
+      at: isDate(p.at) ? p.at : undefined,
+      state: p.state,
+      kind: POST_KINDS.includes(p.kind) ? p.kind : 'foto',
+      title,
+    });
+    if (out.length >= 20) break;
+  }
+  return out;
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function parseStatus(raw: any): StatusFile {
   if (!raw || typeof raw !== 'object') throw new Error('leeg of ongeldig bestand');
@@ -60,6 +80,7 @@ export function parseStatus(raw: any): StatusFile {
           ? v.todo.map((t: unknown) => clip(t, 100)).filter((t: string | undefined): t is string => !!t).slice(0, 8)
           : undefined,
         todoEnc: parseEnc(v.todoEnc),
+        posts: parsePosts(v.posts),
         runUrl: typeof v.runUrl === 'string' && /^https:\/\//i.test(v.runUrl) ? v.runUrl : undefined,
       };
     }
