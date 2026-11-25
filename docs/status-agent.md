@@ -51,6 +51,22 @@ STAP 2 – Routines koppelen aan agents via triggerName
 - Bevat triggerName een "|", dan zijn het alternatieven: elke naam ertussen telt (bijvoorbeeld "Casoleo inspreek-scripts|Casoleo scripts").
 - Een agent zonder gekoppelde routine laat je helemaal weg uit status.json (de app toont dan zelf "Vacature" of "geen data").
 
+STAP 2b – Nieuwe agents een bureau geven
+Een routine die aan GEEN agent gekoppeld is, krijgt automatisch een bureau als ALLE volgende punten kloppen:
+- enabled = true en er is een cron_expression (een terugkerende routine; eenmalige herinneringen nooit);
+- het is niet jezelf;
+- de afdeling is uit de naam af te leiden: naam begint met "DIH" of "Duurzaam In Huis" → "dih"; met "Casoleo" → "casoleo"; met "Optima" → "optima". Lukt dat niet, voeg hem dan niet toe en noem de naam in de slotregel.
+Voeg dan aan public/agents.config.json (in "agents", achteraan bij de andere agents van die afdeling) een blok toe:
+  { "id": "<afdeling>-<korte-slug>", "name": "<korte Nederlandse naam zonder afdelingsnaam>", "shortName": "<max 10 tekens>",
+    "department": "<afdeling>", "role": "<zie hieronder>", "description": "<één zin wat de agent doet, zonder klantgegevens>",
+    "schedule": "<schema in gewone taal>", "triggerName": "<exacte routinenaam>", "triggerMatch": "exact", "planned": false }
+- role: kies uit planning (planning/kalender), ads (advertenties), weer, content (teksten, posts, video's, scripts), seo, reviews, opvolging (leads/bellen), briefing (briefings, rapporten), taken (takenlijst/dashboard), realtime. Twijfel: content.
+- schedule: uit cron_expression, bijvoorbeeld "Dagelijks 06:47", "Maandag 08:37", "Donderdag 13:40", "Elke 1e van de maand om 09:38".
+- description: baseer je alleen op de eerste zinnen van de prompt (lees niet verder) en zet er nooit namen van klanten of collega's, e-mailadressen of id's in.
+- Bestaat er al een bureau met "planned": true in dezelfde afdeling dat duidelijk dezelfde taak is (bijvoorbeeld "Optima – Ads" en het bureau optima-ads), pas dan dat bureau aan (triggerName = routinenaam, planned = false) in plaats van een nieuw bureau te maken.
+- Houd de JSON geldig (controleer door hem te parsen) en wijzig verder niets aan andere agents of afdelingen.
+- Neem de nieuwe agent daarna gewoon mee in stap 3 tot en met 5.
+
 STAP 3 – State afleiden (per agent; de eerste regel die klopt, wint)
 1. paused  – alle gekoppelde routines staan uit (enabled = false) én geen daarvan is een eenmalige routine die al gedraaid heeft (ended_reason "run_once_fired"). Een eenmalige routine die al gedraaid heeft, is klaar, niet gepauzeerd.
 2. working – de nieuwste start heeft status "running" (en is minder dan 2 uur oud).
@@ -102,15 +118,15 @@ STAP 5 – Schrijven
   }
 - Gebruik als sleutels de id's uit public/agents.config.json. Is er geen enkele gekoppelde routine, schrijf dan "agents": {} (maar wel een verse updatedAt).
 - Controleer dat het bestand geldige JSON is door het opnieuw te lezen.
-- Schrijf ALLEEN data/status.json; wijzig geen andere bestanden in de repo. Tijdelijke bestanden horen buiten de repo.
+- Schrijf ALLEEN data/status.json, plus public/agents.config.json als stap 2b een bureau toevoegde; wijzig geen andere bestanden in de repo. Tijdelijke bestanden horen buiten de repo.
 
 STAP 6 – Commit en push
-- git add data/status.json
-- git commit -m "status: <HH:MM>"   (tijd in Europe/Madrid)
+- git add data/status.json (en public/agents.config.json als stap 2b iets toevoegde)
+- git commit -m "status: <HH:MM>"   (tijd in Europe/Madrid; met nieuwe bureaus: "status: <HH:MM>, nieuw: <namen>")
 - git push
 - Mislukt de push door een conflict: git pull --rebase, schrijf status.json opnieuw volgens stap 5 en push nog één keer. Mislukt het daarna nog, stop dan en meld kort waarom.
 
-Sluit af met één regel: hoeveel agents working / waiting / error zijn.
+Sluit af met één regel: hoeveel agents working / waiting / error zijn, en welke nieuwe bureaus je hebt toegevoegd.
 ```
 
 ## Urgente taken (Dashboard-assistent)

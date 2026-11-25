@@ -1,6 +1,6 @@
 import './style.css';
 import { MAX_FPS } from './config';
-import { startData } from './data/controller';
+import { refreshNow, startData } from './data/controller';
 import { deriveViews, Store } from './data/store';
 import { OfficeView } from './render/renderer';
 import { initClock, now } from './time';
@@ -44,6 +44,18 @@ toggle.addEventListener('click', () => {
   listEl.hidden = !listMode;
   if (listMode) renderList(listEl, views, select);
   else office.resize();
+});
+
+const refreshBtn = document.getElementById('refresh') as HTMLButtonElement;
+refreshBtn.addEventListener('click', async () => {
+  refreshBtn.disabled = true;
+  refreshBtn.textContent = 'Bezig…';
+  try {
+    await refreshNow();
+  } finally {
+    refreshBtn.textContent = 'Ververs';
+    refreshBtn.disabled = false;
+  }
 });
 
 let hadStatus = false;

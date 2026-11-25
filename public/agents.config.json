@@ -163,6 +163,30 @@
       "triggerName": "Casoleo inspreek-scripts|Casoleo scripts",
       "triggerMatch": "prefix",
       "planned": false
+    },
+    {
+      "id": "casoleo-video",
+      "name": "Video-agent",
+      "shortName": "Video",
+      "department": "casoleo",
+      "role": "content",
+      "description": "Maakt elke donderdag de video's van de week uit de goedgekeurde onderwerpen",
+      "schedule": "Donderdag 13:40",
+      "triggerName": "Casoleo video-agent",
+      "triggerMatch": "exact",
+      "planned": false
+    },
+    {
+      "id": "casoleo-maandbriefing",
+      "name": "Maandbriefing",
+      "shortName": "Maandbrief",
+      "department": "casoleo",
+      "role": "briefing",
+      "description": "Stelt elke maand de onderwerpen en video's voor en zet ze na akkoord in de wachtrij",
+      "schedule": "Elke 1e van de maand om 09:38",
+      "triggerName": "Casoleo maandbriefing",
+      "triggerMatch": "exact",
+      "planned": false
     }
   ]
 }

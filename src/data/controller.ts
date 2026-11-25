@@ -11,6 +11,12 @@ import type { Store } from './store';
  *  - anders status.json elke 60 s ophalen; bij een fout blijft de laatste stand staan.
  * Met ?status=/data/status.json kun je lokaal een bestand op dezelfde server testen.
  */
+/** Handmatig verversen (knop in de topbalk): config en status meteen opnieuw ophalen. */
+let manual: (() => Promise<void>) | null = null;
+export function refreshNow(): Promise<void> {
+  return manual ? manual() : Promise.resolve();
+}
+
 export async function startData(store: Store, params: URLSearchParams): Promise<void> {
   const url = statusUrl(params);
   const demoMode = params.get('demo') === '1' || !url;
@@ -26,7 +32,7 @@ export async function startData(store: Store, params: URLSearchParams): Promise<
   let demo: DemoSource | null = null;
 
   // Config periodiek opnieuw lezen: een nieuw bureau verschijnt dan vanzelf.
-  setInterval(async () => {
+  const reloadConfig = async () => {
     try {
       const cfg = await loadConfig();
       if (JSON.stringify(cfg) !== JSON.stringify(store.state.config)) {
@@ -36,7 +42,9 @@ export async function startData(store: Store, params: URLSearchParams): Promise<
     } catch (e) {
       console.warn('Config opnieuw laden mislukt; oude config blijft staan.', e);
     }
-  }, CONFIG_REFRESH_MS);
+  };
+  setInterval(reloadConfig, CONFIG_REFRESH_MS);
+  manual = reloadConfig;
 
   if (demoMode) {
     demo = new DemoSource(store.state.config!, now);
@@ -61,6 +69,9 @@ export async function startData(store: Store, params: URLSearchParams): Promise<
     } finally {
       busy = false;
     }
+  };
+  manual = async () => {
+    await Promise.all([reloadConfig(), poll()]);
   };
   await poll();
   setInterval(poll, REFRESH_MS);

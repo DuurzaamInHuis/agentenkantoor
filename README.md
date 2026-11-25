@@ -56,6 +56,8 @@ npm run preview
 
 ## Een agent toevoegen
 
+Meestal hoeft dit niet met de hand: maak je een nieuwe terugkerende routine waarvan de naam begint met "DIH", "Casoleo" of "Optima", dan voegt de status-agent bij zijn volgende run zelf een bureau toe. Met de knop **Ververs** in de topbalk haal je daarna meteen de nieuwste agents en status op, in plaats van te wachten. Een bureau met de hand toevoegen kan ook:
+
 Voeg een blok toe aan `agents` in `public/agents.config.json`:
 
 ```json
