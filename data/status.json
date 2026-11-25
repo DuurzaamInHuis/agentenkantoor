@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T06:12:00+01:00",
+  "updatedAt": "2026-11-25T07:14:00+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -9,19 +9,21 @@
     },
     "dih-instagram": {
       "state": "idle",
-      "lastRunAt": "2026-11-24T05:45:49Z",
-      "nextRunAt": "2026-11-25T05:45:00Z",
-      "summary": "Gisteren gestart om 06:45; de chat staat in Cowork. Volgende run vandaag 06:45.",
+      "lastRunAt": "2026-11-25T05:46:03Z",
+      "nextRunAt": "2026-11-26T05:45:00Z",
+      "summary": "Vandaag gestart om 06:46; de chat staat in Cowork. Volgende run morgen 06:45.",
       "approvalsPending": 0
     },
     "dih-dashboard": {
       "state": "waiting",
-      "nextRunAt": "2026-11-25T05:47:00Z",
-      "summary": "Nog niet gedraaid; eerste run vandaag om 06:47. 5 urgente taken voor vandaag.",
-      "approvalsPending": 5,
+      "lastRunAt": "2026-11-25T05:47:20Z",
+      "nextRunAt": "2026-11-26T05:47:00Z",
+      "summary": "Vandaag gestart om 06:47; takenlijst ververst (de chat staat in Cowork). 6 urgente taken voor vandaag.",
+      "approvalsPending": 6,
       "todo": [
         "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
-        "Lead spouwmuurisolatie: partner bellen (deadline verlopen)",
+        "Lead spouwmuurisolatie: reactie afwachten (deadline verlopen)",
+        "Lead kozijnen: subsidies toelichten (vandaag)",
         "Lead kozijnen: reactie afwachten (urgentie hoog)",
         "Lead energielabel: label afmaken (urgentie hoog)",
         "DIH administratie: kosten opheffen (urgentie hoog)"
@@ -29,9 +31,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "KtBdWXOLIqif3s5LZoQsgg==",
-        "iv": "xJC8Qq5S5FuYi2+p",
-        "ct": "2tD2EZFmeojqlz/lLghBIYoXILIkXFK9PGHvmzAHOarXMMixNIoBK9Tb7LaPcN41JsGsxH+gvlX0BIGryJBxZJHc267Vm4aqaNqG9Zdrto0WWmG43wwRcjDaz7CasPbrFTMYIcHtOWLZ3Pm8rkvtUH+nes72msSbJqq/8NwT2CTno0ibWGUGjiYdZenIK/dwgzurLN5hNtbM+4zLRm5Q/YLLCL2LRWqa03lFrMWbuLU+RYCoKbS/pOYeTMuAoHnzFL7VeT0Z/OrxMQIl1k6mXw9kMZ4Zd55XX4NY3qngafYDxNKEiQDAfW7LUAnDo4GOzq2T9P4AC5VMN24auyQWH8ot8j20/GccRm0UGTW/oHVMk7bSYKbzHD2+MBYOjbPF3EotBrvEfNgqKfoxmuliE61b12VmsFX/IJjCCQVmGbC9ZDb2Vg=="
+        "salt": "76BoqromShIuecp0GtNwpQ==",
+        "iv": "6kBSq12K4vFeL179",
+        "ct": "DTRCg4Z/wDHf8Sq1M+VXck13a4ua++TapmmxrlMvpKAzFQWLZbG7UzZwOfHEcWFLv7P6Vad6xtbcpVp0xLhC2Ije1fCrlOm0Ccz2+Wlu2rgBfYmAYENmZEYQ9PQ2xBFz0KRRIl+/9a61HtCjaAOhd9UEhe+wJROFNPjyGwjB2IZqIjy6qyz+eRh9EmKy0FIkiW3jvJfLNOPejfSFkZKwzIRS67dewoCtgIT4RU7Ia96G9Ec0ezmvvvhGo/VhjHlHhe82qtijHKq9C9+WwFADczMD0o6O73DdK0wb9hm2ZZLlJq0+gz1oxtw9BcmQ1SgQEjaLT33LLhPJCG4ii4rgige9s0Jjw+grWItILvHVeoenM1jIMfyenoByR65KSWdeK4ayWOJYLC8zwhJNj3ui5PRzq0hkcMuKTIta6uYeVwbABnsRf+jIIp/Rwy65sDoqG2fDQdtEp9qJdcJ4WVYdROWDZkizVlOvNrV7cCz5etSahyiSUdojwh6ftPshCA=="
       }
     },
     "casoleo-instagram": {
