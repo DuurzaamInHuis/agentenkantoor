@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T19:02:50+01:00",
+  "updatedAt": "2026-11-25T20:13:14+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -10,11 +10,9 @@
     "dih-instagram": {
       "state": "waiting",
       "lastRunAt": "2026-11-25T17:36:56Z",
-      "lastRunStatus": "succeeded",
       "nextRunAt": "2026-11-26T05:45:00Z",
       "summary": "Vanavond opnieuw gestart: geen nieuwe video ingepland (vorst blijft). Carrousel mist nog slides; wacht op Kelvins keuze hoe die te maken.",
-      "approvalsPending": 1,
-      "runUrl": "https://claude.ai/code/session_01JMpixbujRE72SDVUo5AvJP"
+      "approvalsPending": 1
     },
     "dih-dashboard": {
       "state": "waiting",
@@ -24,18 +22,18 @@
       "approvalsPending": 6,
       "todo": [
         "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
-        "Lead spouwmuurisolatie: reactie afwachten (deadline verlopen)",
+        "Lead spouwmuurisolatie: wachten op terugkoppeling (deadline verlopen)",
         "Lead kozijnen: subsidies toelichten (vandaag)",
-        "Lead kozijnen: reactie fabrikant afwachten (urgentie hoog)",
+        "Lead kozijnen: wachten op leverancier en klant (urgentie hoog)",
         "Lead energielabel: label afmaken (urgentie hoog)",
         "DIH administratie: kosten opheffen (urgentie hoog)"
       ],
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "5PM5I5sDJkuUxLUZbwYfgg==",
-        "iv": "VV3+0hnQK7E8NCgY",
-        "ct": "CdlCo/O6Dcd1g8+NWULdUwtpyOuEvHbKlJ95uo4QlSEQRoVaQR50xMfpTVwREYbn9wVNr8iS3zQzcPvig0jgwmbQMUTuXs+cZGcZr1dJ/za+IGBC1DLT2ZUWoxF7mKB/ulGATAqk3laAe4c4Xk7UFauuxTfTgxcJ90xkZxfsL7okzaBsz+cupmbOQ2jYpvKh+CH+LAZ9561Vh3IqLfiB4d3z8APwsn0d5oCcIsBmVBovwdyxAV1o3fYWJ+OGFY5Mvk+X1pKTriK4PyKmOxI+sJGbHVhRSq7rDOuGZMhovGqJuhCx4yF29AnbBD4R94yqIT1fT/LI2LAw/PAWjatxS7Th2tFxD0oF8MgcgxcWjIdgfl/fXOOOkmH5/5c1ZQ6qP1bLt4QL5WT98Pp3meTaZwAsRtEG+ARbsT7j7pIxkX1Wxc37AEAgrM3A42v1lWd5oG3qfxqTprXq8TM6Dafn3yu9gSuMBrw1Ci6EMRO0PHOkK2UeiQefat04ZoNEr2H4czhMYqF/Jeg="
+        "salt": "LvDByTSWlVDD7dLzptdYSg==",
+        "iv": "peNSJN7iu2tFOdWE",
+        "ct": "dRUJQgpqjd868/hfWSu4vwtdM+x2NXLM2WHvNI1frYoQ482y4o/CPoDLLNcM7WNRCJvHauvxZTF4xbtn+uLwzcbuSjg3MgDi0CSvbu9slCmPmoP1nBnA1go3QmTeC+7Xpp16V6Oa2R5xZ23+X5y3tS0Rhw2wfSkchkJp5nJA1P+lxV4mxAJgRTgMFe2vVksP37q551I6GT8wrqnW2FWsbDVhfnVCtfjbXn0Zxl5wr7ar7/evhanbscOUd6m4J1wG5PY+Fc1IIE3QOznAEgA6IFkZVUXp+tjXBsEn2qYM/1ni8fv+b93DXiy1zR1EoajOQGc7CbKM4mEWEjTKDA0uV0xlMsoXln2c+xXnhSmlL7sp5Up7LlIDoslDSFDOz/2HR4o+TDuVKnsG+Ec8g52mZLX9nqesXmEVufZBa93PZr8wms2ajJaojQbkPcaA2QlHmC0JRBa4qjsrjT6I5VuiU/RU23ZgF0Z9eb81n0fApoilV6H9eL9y/6xnmvwwWwrJlvx4mmyP2n6I+KUU7yIdge0vcoQ="
       }
     },
     "casoleo-instagram": {
@@ -44,7 +42,8 @@
       "lastRunStatus": "succeeded",
       "nextRunAt": "2026-11-29T08:58:00Z",
       "summary": "2 carrousels staan als concept klaar in Publora, wachten op 'plan in'. Voor de volgende Reel is nog een ingesproken opname nodig.",
-      "approvalsPending": 2
+      "approvalsPending": 2,
+      "runUrl": "https://claude.ai/code/session_01JMpixcRu8mBPRKZgWWEtbP"
     },
     "dih-linkedin": {
       "state": "idle",
