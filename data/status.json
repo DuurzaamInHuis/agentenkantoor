@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T23:56:30+01:00",
+  "updatedAt": "2026-11-26T00:10:42+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -20,12 +20,12 @@
       "state": "waiting",
       "lastRunAt": "2026-11-25T05:47:20Z",
       "nextRunAt": "2026-11-26T05:47:00Z",
-      "summary": "Vandaag gestart om 06:47; takenlijst ververst (de chat staat in Cowork). 6 urgente taken voor vandaag.",
+      "summary": "Gisteren gestart om 06:47; takenlijst ververst (de chat staat in Cowork). 6 urgente taken voor vandaag.",
       "approvalsPending": 6,
       "todo": [
         "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
         "Lead spouwmuurisolatie: wachten op terugkoppeling (deadline verlopen)",
-        "Lead kozijnen: subsidies toelichten (vandaag)",
+        "Lead kozijnen: subsidies toelichten (deadline verlopen)",
         "Lead kozijnen: wachten op leverancier en klant (urgentie hoog)",
         "Lead energielabel: label afmaken (urgentie hoog)",
         "DIH administratie: kosten opheffen (urgentie hoog)"
@@ -33,9 +33,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "h7VmjyJ4aHQYc++27dzc0g==",
-        "iv": "7NKFYHMxmbJqlVRl",
-        "ct": "u5b3X1qEm5ISSmjd5rQF3h9BJXY/7u3N+b5fSptz5BEE48iyde/bJ8Kc8wahmui9zm2hi2sSrBmCmNrZ85vsw5I5A5FZBVeJ8Qsa0yQcwp0n8kFpLUjj8H51P9lJuEApOow3XjJjMnz1IA2nNNxud0O3FbVu7rKNf9GNxrH+GN2OFTJBId65SvFOkW03V2W/+OwikVYB0/nxJT//Ux+T/XsAVSkgob/iJOKXaWm7biHTCFsZ263M1wOKfsHgtHH5GkzzLWzOwUDxsRjqOhJM0C4YSPzkuAnIN7a+s7PxgHCNMuUX4kEq0DjImeJr1RRWcQmIVhxwbeDzETh9ycb6Ef1AZachkShwvyKqtPVEvAuJ/tvTM+kl2Nyi8xGmaAz2IPrTZyD73WRUQYlFcFxYrypRfeqljeIjrUjE1CUZyBkhcAKUVUqkv+MmRsrjcePX5kQqABYepsbFNPOpGBUVvkBi64s7UoLq10ECfJCpmc0Ni65uQKTCnM6ybdqR47qn0bpH1TWiriCmKeg17yC1XdtMdYo="
+        "salt": "7dgr1KCAgXTv+DmlfXI5bA==",
+        "iv": "M0gRvta04Mjz41BA",
+        "ct": "0a2+1fkutIdx/HRHvz0ileZy207wKHSaGkZYwgoPnoDJPlJnM9aVWYAJU7tgBUps5/UbBwnoojB9DlwAZ5vOUlkU5DunLQ3vx0yh85fVXu5l5PvSsseQAL8Inld56KuydgOl+HuCV+sqkg1efKkHmERLdvLbrGlVyy/rP+2bYPOWvxYssiLQOcLqbp+Em0QmicOe+i8ac7Xv62fi5SFgCWZey+EWNm1Kw6zLN6ZtSqpCW8v/dvVA8J79FPjlKe8jLhVnyfcvKovFyaP1+rjnoAHvxWJM8wYVBJyw1As31LVG9uGMDlY/0t9cB0DczwHJrUHwVgKyhilESzukam6DFBRQAbkkmbsk8bgLWoRsDtWyeFKJVteRwZ0MxDXSCR8blpOujqvjkrXTrHQ3IqmvdWYQEemgcUPQlC94qk1wp2pLavOoctghAmA+ZY9CPeobniXM/fbBE91QYhIlfsABkoZAO8IeuZTaYePz2DJ83HIAg7KP3olKoEVq7qpfUF2+1GDTrQzRat3NpONw7W79kS5nIii1riPuXcrFVRrh"
       }
     },
     "casoleo-instagram": {
@@ -56,7 +56,7 @@
     "casoleo-video": {
       "state": "idle",
       "nextRunAt": "2026-11-26T12:40:00Z",
-      "summary": "Nog niet gedraaid; eerste run morgen (donderdag) om 13:40.",
+      "summary": "Nog niet gedraaid; eerste run vandaag (donderdag) om 13:40.",
       "approvalsPending": 0
     },
     "casoleo-maandbriefing": {
