@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T12:12:00+01:00",
+  "updatedAt": "2026-11-25T13:10:31+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -31,9 +31,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "bpA+xHXF5/hQkdnXCCFZmA==",
-        "iv": "N5yvJNgEE7kJ6BpA",
-        "ct": "/xPAIX3mPFJKUup5ChIqD7qS8NI/UrK7agZkIzH3tD5FIX5EOFBAu7oGfreu6Ul++aSRcnpvJbgQD3vaBrJDCHqNF+ohNd6fBtzM7P5KkkDYWNReod4/FQIE36qA3WH7q4GUucJkPEHCfdYJOItjRR6cDZSIv6w0qBXYFHGpsIbUTqn05rKtbtX/ago8u61FhoIhzF5lkwKsKZmqf/oicln4lUuShNA+lrBJxsdtC6WlSPciajdB+VKD7ZdmA5UW+G+xgv4vgBd2eIxNDXzsspTrmsbLbJzQE3ztVBE3NyHGvkNi5nKYpdrB5eDb3szRBoQJDYVUyyY7AR1nZqTlLu1n5vzvm8daD0jv51ZLW4wn3MNv17nbz1o8BisvnBqS6Duy3M/8Kxjz5AxruSxVPIZaVRZ/q2Qyt6/cn8V6J8AmCc8ccJzmcmERXnjdzVzxebiCx3aYO/MBULhF3XxAOpiCCbXORp4ART1muJ1M+X/MfgXGpLgG2glRLkjQ2Q=="
+        "salt": "ChIFnT7OEMb0qVPI5yYxlw==",
+        "iv": "ZYy90dsvBi9t7L4V",
+        "ct": "P0KL5nMyairH/QiS85HZ4zDcrpG5QBhgC5WkDn8Bm+frgb7/UPnVvuBR6o11MSqDyqEdFvc6Hrn1rfL4ZOiBgAfYJ+AgFvoDplGk6k7KgzEfwnCq7eKn4wFJgKe2Xr5WxgsnyJpSkIA74vXJxlVeCiUfd5zudnY2VxUUHDVIpdgpncMm0RFxUmVnyt2/YKijkomqioS/wDBarFhEAjLymYDeDn3M4A+/1tBbb8SDzF/Ie4nIzqti3CSuRhur5JfygQY4wY9aco0KdZ2d6L0Dyen1B5+h0r7mjjKNkGsL77BdqPCAXTwF4m1ehmp10lct7gm0E1U8v/6I0zRr/AIhjFoNJfasDqQqQAL3hc/20rV2VXSCK/BZUKpnpcCGBW2V01HfTqRgiWjEQNW4TMg8Wtjz5DRoLZ5Tc7PTwY0A+0DqqhdkEg1GcFhdVfBIe6qEEXNaS+6HXTUQkkLu3Hfjfb7GllmlLqm82vrts2jkTpsA1P0V60Quqr8vFRKmcg=="
       }
     },
     "casoleo-instagram": {
@@ -49,7 +49,7 @@
       "state": "idle",
       "lastRunAt": "2026-11-24T08:01:02Z",
       "lastRunStatus": "succeeded",
-      "summary": "Scripts voor video 3 en 4 gisterochtend gestuurd. Overige herinneringen zijn stopgezet; geen nieuwe runs gepland.",
+      "summary": "Scripts voor video 3 en 4 gisterochtend gestuurd. Eenmalige routine is klaar; geen nieuwe runs gepland.",
       "approvalsPending": 0
     },
     "dih-linkedin": {
