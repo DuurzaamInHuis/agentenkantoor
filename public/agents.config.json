@@ -153,18 +153,6 @@
       "planned": false
     },
     {
-      "id": "casoleo-scripts",
-      "name": "Script-assistent",
-      "shortName": "Scripts",
-      "department": "casoleo",
-      "role": "content",
-      "description": "Herinnert aan het inspreken van scripts en zet de tekst klaar",
-      "schedule": "Eenmalige herinneringen",
-      "triggerName": "Casoleo inspreek-scripts|Casoleo scripts",
-      "triggerMatch": "prefix",
-      "planned": false
-    },
-    {
       "id": "casoleo-video",
       "name": "Video-agent",
       "shortName": "Video",
