@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T01:10:27+01:00",
+  "updatedAt": "2026-11-25T02:11:15+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -29,9 +29,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "cKYY549CwPpWk36XrHoePA==",
-        "iv": "hoa6s6O4vLN89vKY",
-        "ct": "TL2IsxrIl/BhUVj64Eg34W1GX1GqHt1kudlgXGAiyy4dnrVV+x7M3s2FwUStU+1Kl4AKHk91ddWxTyTUSI3R9k9qaqR26o4b0M518agw4G27ZbhmNQNS+I7PzYD3Oq+vlH5hoQyYy1/LyUG5cJ56UdRm/eDZMe9UHbbPHuXjvQDUmKoQs2qZY2jPUZOEh7QKTleOzxUbXCxEvYRnY0gCJ0dgtZAH3NJIH13umfNA4ar6CBVPRozZxdrIimlZZx99M2aznivgWxqMUyPeKgBZdduEoGQPqvUgvlz9EX6qN+p7TCuCJuII1ibGY+9KcDAypV+/wlFd+luvX622W0YwXvi2GmKF418J5MJ1XMtdLqwxyN+sDEvefiQr0c5TYRKQAJ+QW5pOr4fKsmV7gvfIkw74EcuHxzrbknPpCiE9zXJVRmzYyDcqMnx2"
+        "salt": "CzoYhqFs6J+BIZWXL3Ih1A==",
+        "iv": "1a3i7DluyCCnEkvP",
+        "ct": "Mp2lBEL/szAIJXcne2ln3Dgpa00vy8qGfs43hzIVpbfhU1dYhUQbcDn+UtgTs5Xpy1hSe+R2+GNLL51o7BXbBcbn9iqqPfrgpagwAEr+L/9gDqIHHf7qwzeZ1pDxmdOp44lrp93eDlm7n7KGLUadUGSRS1dM0pHzTyYL3f4DmqgEUtLX+SF4TrUUY6uPC6wB6MLpwe5yISab7j1GquI0J3tlqPg2OeFp075s3b71/Hqdmrb+CIOtTd+w9TonpTqYf3XgaI4ac/G3RgQXAxzDZ8ZU2TzY4xgMCuWJsvckR7Zmku5++odxUeFFPniGMA8PBfBG5vo9GZFySJF/ctBbAlpsYaq2AzxhfKmQHZ3xfQ7B2ZxBjJjoUn1R3t+XK42BCbzj+ajcCSqafxZjzvi1cOzxW6zhzdCKYUmmB0gASORtEcW5IxseT+ia"
       }
     },
     "casoleo-instagram": {
