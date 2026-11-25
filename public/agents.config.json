@@ -129,6 +129,18 @@
       "planned": false
     },
     {
+      "id": "dih-linkedin",
+      "name": "LinkedIn-schrijver",
+      "shortName": "LinkedIn",
+      "department": "dih",
+      "role": "content",
+      "description": "Maakt elke maandag 2 LinkedIn-posts van poll-uitslagen en Instagram-cijfers",
+      "schedule": "Maandag 08:37",
+      "triggerName": "DIH LinkedIn weekposts",
+      "triggerMatch": "exact",
+      "planned": false
+    },
+    {
       "id": "casoleo-instagram",
       "name": "Instagram-weekplanning",
       "shortName": "Weekplanning",

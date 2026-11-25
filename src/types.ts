@@ -68,4 +68,6 @@ export interface AgentView {
   state: DisplayState;
   status: AgentStatus | null;
   noData: boolean;
+  /** Melding is op dit apparaat als gelezen gemarkeerd; state is dan "idle". */
+  read: boolean;
 }

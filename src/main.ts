@@ -21,7 +21,10 @@ const toggle = document.getElementById('toggle-view') as HTMLButtonElement;
 let views: AgentView[] = [];
 const viewById = (id: string) => views.find((v) => v.config.id === id);
 
-const panel = new Panel(() => (office.selectedId = null));
+const panel = new Panel(
+  () => (office.selectedId = null),
+  () => refresh(),
+);
 const select = (id: string) => {
   const v = viewById(id);
   if (!v) return;

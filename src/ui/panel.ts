@@ -1,6 +1,7 @@
 import { formatCountdown, formatRunTime, humanSchedule } from '../time';
 import type { AgentView } from '../types';
 import { cached, decryptTodo, getPass, setPass } from '../data/crypto';
+import { markRead, markUnread, NOTIFY_STATES } from '../data/readMarks';
 import { h, ROLE_LABEL, runStatusLabel, STATE_LABEL } from './labels';
 
 /** Zijpaneel (desktop) / onderblad (telefoon) met de details van één agent. */
@@ -11,7 +12,11 @@ export class Panel {
   private view: AgentView | null = null;
   private unlockError = '';
 
-  constructor(private onClose: () => void) {
+  constructor(
+    private onClose: () => void,
+    /** Na "Gelezen" of "Ongedaan maken": alles opnieuw afleiden en tekenen. */
+    private onReadChange: () => void,
+  ) {
     this.el = document.getElementById('panel')!;
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && this.id) this.close();
@@ -55,7 +60,15 @@ export class Panel {
         h('div', {}, h('p', { class: 'dept-chip' }, v.dept.name), h('h2', { id: 'panel-title' }, a.name)),
         h('button', { class: 'close', type: 'button', 'aria-label': 'Paneel sluiten' }, '×'),
       ),
-      h('p', { class: `state-pill s-${v.state}` }, h('span', { class: 'dot', 'aria-hidden': 'true' }), STATE_LABEL[v.state]),
+      h(
+        'div',
+        { class: 'state-row' },
+        h('p', { class: `state-pill s-${v.state}` }, h('span', { class: 'dot', 'aria-hidden': 'true' }), STATE_LABEL[v.state]),
+        s && NOTIFY_STATES.includes(s.state) && !v.read
+          ? h('button', { class: 'btn read-btn', type: 'button' }, 'Gelezen')
+          : null,
+        v.read ? h('span', { class: 'read-note' }, 'Gelezen · ', h('button', { class: 'linkish undo-read', type: 'button' }, 'ongedaan maken')) : null,
+      ),
       h('p', { class: 'desc' }, a.description || ROLE_LABEL[a.role] || ''),
       v.noData && v.state !== 'planned' ? h('p', { class: 'nodata' }, 'Geen data: deze agent staat (nog) niet in status.json.') : null,
       h(
@@ -78,6 +91,14 @@ export class Panel {
         : h('button', { class: 'btn primary', type: 'button', disabled: true }, 'Open laatste run'),
     );
     body.querySelector('.close')!.addEventListener('click', () => this.close());
+    body.querySelector('.read-btn')?.addEventListener('click', () => {
+      if (s) markRead(a.id, s);
+      this.onReadChange();
+    });
+    body.querySelector('.undo-read')?.addEventListener('click', () => {
+      markUnread(a.id);
+      this.onReadChange();
+    });
     const focused = this.el.contains(document.activeElement) ? (document.activeElement as HTMLElement).className : null;
     this.el.replaceChildren(body);
     if (focused) (body.querySelector(`.${focused.split(' ')[0]}`) as HTMLElement | null)?.focus();

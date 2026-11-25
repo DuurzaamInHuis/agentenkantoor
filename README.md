@@ -5,6 +5,7 @@ Een levendig pixel-art kantoor waarin elk poppetje één van Kelvins AI-agents i
 - Drie afdelingen naast elkaar (op de telefoon onder elkaar): **Optima Isolatie**, **Duurzaam In Huis** en **Casoleo**.
 - Elk poppetje zit aan een eigen bureau, met naambordje en rol-icoon.
 - Klik of tik op een poppetje (of bureau) voor details; de knop **Lijst** toont alles als tabel.
+- Met **Gelezen** in het paneel gaat een poppetje met een melding weer zitten. Dat geldt op dat apparaat, tot er een nieuwe melding komt (andere status, nieuwe run, ander aantal openstaande punten, of bij de takenlijst een nieuwe dag).
 - Het licht volgt de echte tijd in Europe/Madrid. 's Nachts branden alleen de lampjes van agents die werken.
 - Om 08:30 brengt de postbode de dagelijkse briefing naar de deur van Kelvin.
 

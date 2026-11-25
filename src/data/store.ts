@@ -1,5 +1,6 @@
 import { DONE_WINDOW_MS } from '../config';
 import { parseTime } from '../time';
+import { isRead } from './readMarks';
 import type { AgentView, DisplayState, OfficeConfig, StatusFile } from '../types';
 
 export interface AppState {
@@ -47,7 +48,10 @@ export function deriveViews(config: OfficeConfig, status: StatusFile | null, now
         if (t !== null && nowMs - t > DONE_WINDOW_MS) state = 'idle';
       }
     }
-    return { config: a, dept: depts.get(a.department)!, state, status: st, noData: !st };
+    // Gelezen melding: het poppetje gaat weer zitten tot er een nieuwe melding is.
+    const read = state !== 'idle' && isRead(a.id, st);
+    if (read) state = 'idle';
+    return { config: a, dept: depts.get(a.department)!, state, status: st, noData: !st, read };
   });
 }
 
