@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T02:11:15+01:00",
+  "updatedAt": "2026-11-25T03:33:12+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -21,7 +21,7 @@
       "approvalsPending": 5,
       "todo": [
         "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
-        "Lead spouwmuurisolatie: installateur bellen (deadline verlopen)",
+        "Lead spouwmuurisolatie: partner bellen (deadline verlopen)",
         "Lead kozijnen: reactie afwachten (urgentie hoog)",
         "Lead energielabel: label afmaken (urgentie hoog)",
         "DIH administratie: kosten opheffen (urgentie hoog)"
@@ -29,9 +29,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "CzoYhqFs6J+BIZWXL3Ih1A==",
-        "iv": "1a3i7DluyCCnEkvP",
-        "ct": "Mp2lBEL/szAIJXcne2ln3Dgpa00vy8qGfs43hzIVpbfhU1dYhUQbcDn+UtgTs5Xpy1hSe+R2+GNLL51o7BXbBcbn9iqqPfrgpagwAEr+L/9gDqIHHf7qwzeZ1pDxmdOp44lrp93eDlm7n7KGLUadUGSRS1dM0pHzTyYL3f4DmqgEUtLX+SF4TrUUY6uPC6wB6MLpwe5yISab7j1GquI0J3tlqPg2OeFp075s3b71/Hqdmrb+CIOtTd+w9TonpTqYf3XgaI4ac/G3RgQXAxzDZ8ZU2TzY4xgMCuWJsvckR7Zmku5++odxUeFFPniGMA8PBfBG5vo9GZFySJF/ctBbAlpsYaq2AzxhfKmQHZ3xfQ7B2ZxBjJjoUn1R3t+XK42BCbzj+ajcCSqafxZjzvi1cOzxW6zhzdCKYUmmB0gASORtEcW5IxseT+ia"
+        "salt": "6AxX1W5jYoPo8GqcIzTXDQ==",
+        "iv": "VsABIKzk+3Jn1QzL",
+        "ct": "Eb1IfvIiMoB30JEKoC+h7Qc24ZaQax2V0bTZYCfBzGnqUZLMo3GFF2WTHLVrN4ggYbTT312IxD3Af5bqBbNP6Zx7ILJZXWc4VkfrxjIZcuhTtYrR61oSae7VDUCxBk320X8e5P6WC1QnD+9f0uqnMRF+MDlcKafJ8KU7wQ2my0Ly3mkQQvo2MDsmqdmMLUCoFbeaaftTnFCyLL9l4HwjnMjpL+oH+taqoUG9VHG3gC+u3jkZ9a82aUd52vnWbg0vOi3l3+8pw14MBnDbeNw86c++VhyiZsYtV06zr7OTMsa322fRZPeD9W3dmjZBtKv0WXvkgbsOzMT5i2wg5Kukpbweu2287MOBcLCWctzvN2/GeZ4rAJrKvIH6qqq1WGR4vnjU+1SfjWy+o8RbVF1OhsPPUeegFJ9wxIyCMbamM3JY3DS9yg=="
       }
     },
     "casoleo-instagram": {
