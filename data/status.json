@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T13:10:31+01:00",
+  "updatedAt": "2026-11-25T14:10:55+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -56,6 +56,18 @@
       "state": "idle",
       "nextRunAt": "2026-11-30T07:37:00Z",
       "summary": "Nog niet gedraaid; eerste run maandag om 08:37.",
+      "approvalsPending": 0
+    },
+    "casoleo-video": {
+      "state": "idle",
+      "nextRunAt": "2026-11-26T12:40:00Z",
+      "summary": "Nog niet gedraaid; eerste run morgen (donderdag) om 13:40.",
+      "approvalsPending": 0
+    },
+    "casoleo-maandbriefing": {
+      "state": "idle",
+      "nextRunAt": "2026-12-01T08:38:00Z",
+      "summary": "Nog niet gedraaid; eerste run 1 december om 09:38.",
       "approvalsPending": 0
     }
   }
