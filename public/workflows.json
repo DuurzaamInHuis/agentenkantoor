@@ -1,0 +1,124 @@
+{
+  "workflows": [
+    {
+      "id": "casoleo-instagram",
+      "department": "casoleo",
+      "title": "Instagram: van onderwerp tot ingeplande post",
+      "needs": "Je Mac staat aan met de Claude-app open (de wachtrij Ideeen.md staat op je Mac).",
+      "steps": [
+        {
+          "who": "casoleo-maandbriefing",
+          "when": "1e van de maand, 09:38",
+          "does": "Blikt terug op vorige maand en stelt de video's, carrousels, Kelvin-in-beeld- en 3D-video voor de komende maand voor.",
+          "approval": "Antwoord in de chat met akkoord of aanpassingen. Zonder antwoord blijven de onderwerpen op 'voorgesteld'.",
+          "result": "Goedgekeurde onderwerpen in de wachtrij (Ideeen.md)"
+        },
+        {
+          "who": "casoleo-video",
+          "when": "Elke donderdag, 13:40",
+          "does": "Pakt het volgende onderwerp uit de wachtrij en maakt de video met je AI-stem, plus de caption. Na elke 4 video's is het jouw beurt om zelf in beeld te komen: je krijgt dan een script.",
+          "result": "1 video als concept in Publora (niet ingepland) en de video in je chat"
+        },
+        {
+          "who": "casoleo-instagram",
+          "when": "Elke zondag, 09:58",
+          "does": "Maakt de carrousels voor de week en kiest een vrije plek voor de video van de week.",
+          "approval": "Hij vraagt 'Zal ik ze inplannen?'. Pas na jouw ja plant hij in.",
+          "result": "Posts voor ma, wo en za ingepland in Publora"
+        }
+      ]
+    },
+    {
+      "id": "dih-instagram",
+      "department": "dih",
+      "title": "Instagram: video's op het juiste weermoment",
+      "steps": [
+        {
+          "who": "Jij",
+          "when": "Wanneer je wilt",
+          "does": "Zet nieuwe video's in Google Drive: zonder spraak in '1 Wachtrij Jordan', kant-en-klaar in '2 Wachtrij Publora'.",
+          "result": "Video's in de Drive-wachtrijen"
+        },
+        {
+          "who": "dih-instagram",
+          "when": "Elke dag, 06:45",
+          "does": "Kijkt naar het weer van de komende dagen. Bij een goed moment kiest hij een passende video en schrijft de caption. Na elke 2 video's maakt hij een carrousel.",
+          "result": "Uit 'Wachtrij Publora' en carrousels: zelf ingepland in Publora, je krijgt een melding. Uit 'Wachtrij Jordan': mail naar Jordan."
+        },
+        {
+          "who": "Jordan",
+          "when": "Na zijn mail",
+          "does": "Zet er een Instagram-nummer onder en plant de video in via de Instagram-app.",
+          "result": "Video ingepland op Instagram"
+        }
+      ],
+      "note": "Hier zit geen akkoord-stap in: de planner plant zelf in. Aanpassen kan in Publora."
+    },
+    {
+      "id": "dih-linkedin",
+      "department": "dih",
+      "title": "LinkedIn: twee posts per week",
+      "steps": [
+        {
+          "who": "Jij",
+          "when": "Voor maandag",
+          "does": "Zet nieuwe cijfers of screenshots in de map 'DIH LinkedIn' op je Mac (optioneel).",
+          "result": "Input voor de posts"
+        },
+        {
+          "who": "dih-linkedin",
+          "when": "Elke maandag, 08:37",
+          "does": "Schrijft 2 LinkedIn-posts met een afbeelding, op basis van je cijfers en Instagram-resultaten. Cijfers die hij niet heeft, worden een [plekhouder].",
+          "approval": "Lees de posts in de chat, vul de plekhouders in en geef akkoord.",
+          "result": "Posts ingepland via Publora (of klaar in Concepten/ om zelf te plaatsen)"
+        }
+      ]
+    },
+    {
+      "id": "dih-dashboard",
+      "department": "dih",
+      "title": "Dashboard en taken van vandaag",
+      "steps": [
+        {
+          "who": "dih-dashboard",
+          "when": "Elke dag, 06:47",
+          "does": "Haalt verkoop, leads, bezoeken en taken uit Google Drive en ververst je dashboard.",
+          "result": "Dashboard Duurzaam In Huis is bijgewerkt"
+        },
+        {
+          "who": "Kantoor",
+          "when": "Elk uur",
+          "does": "De status-agent leest de urgente taken uit het dashboard.",
+          "result": "'Vandaag oppakken' bij de Dashboard-assistent hierboven"
+        },
+        {
+          "who": "Jij",
+          "when": "Elke dag",
+          "does": "Loopt de urgente taken na en pakt ze op.",
+          "result": "Taken afgerond in het dashboard"
+        }
+      ]
+    },
+    {
+      "id": "optima-content",
+      "department": "optima",
+      "title": "Content voor de week erna",
+      "steps": [
+        {
+          "who": "optima-content",
+          "when": "Elke zondag, 09:46",
+          "does": "Maakt video-ideeën en carrousels voor de volgende week en verwerkt je eerdere feedback.",
+          "result": "Een week-tabblad in de doc 'Optima – Agents'"
+        },
+        {
+          "who": "Jij",
+          "when": "Na zijn bericht",
+          "does": "Beoordeelt elk item.",
+          "approval": "Kies per item Akkoord, Aanpassen of Afgewezen in het Stuurpaneel onder Goedkeuringen, of antwoord in de chat.",
+          "result": "Aanpassingen komen de week erna terug. Er wordt niets gepubliceerd."
+        }
+      ],
+      "note": "De andere Optima-agents zijn nog niet gebouwd en hebben nog geen workflow."
+    }
+  ]
+}

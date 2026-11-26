@@ -8,6 +8,7 @@ import type { AgentView } from './types';
 import { renderList } from './ui/listView';
 import { Panel } from './ui/panel';
 import { renderNotice, renderTopbar } from './ui/topbar';
+import { loadWorkflows, renderWorkflows, type Workflow } from './ui/workflows';
 
 const params = new URLSearchParams(location.search);
 initClock(params);
@@ -46,12 +47,32 @@ toggle.addEventListener('click', () => {
   else office.resize();
 });
 
+// Workflow-overzicht onder het kantoor (los van de status; opnieuw geladen bij Ververs).
+const wfEl = document.getElementById('workflows')!;
+let workflows: Workflow[] = [];
+let wfKey = '';
+function drawWorkflows(): void {
+  const key = JSON.stringify([workflows, store.state.config]);
+  if (key === wfKey) return;
+  wfKey = key;
+  renderWorkflows(wfEl, workflows, store.state.config, select);
+}
+async function reloadWorkflows(): Promise<void> {
+  try {
+    workflows = await loadWorkflows();
+    drawWorkflows();
+  } catch (e) {
+    console.warn('Workflows laden mislukt.', e);
+  }
+}
+void reloadWorkflows();
+
 const refreshBtn = document.getElementById('refresh') as HTMLButtonElement;
 refreshBtn.addEventListener('click', async () => {
   refreshBtn.disabled = true;
   refreshBtn.textContent = 'Bezig…';
   try {
-    await refreshNow();
+    await Promise.all([refreshNow(), reloadWorkflows()]);
   } finally {
     refreshBtn.textContent = 'Ververs';
     refreshBtn.disabled = false;
@@ -68,6 +89,7 @@ function refresh(): void {
   if (s.config) office.setData(s.config, views, fresh);
   renderTopbar(s, views);
   renderNotice(s);
+  drawWorkflows();
   if (listMode) renderList(listEl, views, select);
   if (panel.id) {
     const v = viewById(panel.id);

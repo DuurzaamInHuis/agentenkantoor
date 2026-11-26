@@ -167,3 +167,7 @@ src/
 ```
 
 Alle graphics zijn in code getekend (pixel-arrays en rechthoeken); er worden geen externe afbeeldingen gebruikt. Het pixel-lettertype is [Silkscreen](https://fonts.google.com/specimen/Silkscreen) (SIL Open Font License) via Google Fonts. De animatie draait op maximaal 30 fps en pauzeert als het tabblad verborgen is.
+
+## Workflows
+
+Onder het kantoor staat een overzicht van de workflows tussen de agents (welke agent wat doorgeeft, in welke volgorde, en waar Kelvin goedkeurt). De inhoud staat in [`public/workflows.json`](public/workflows.json): per workflow een `department`, `title`, optioneel `needs`/`note`, en `steps` met `who` (agent-id of een persoon zoals "Jij"), `when`, `does`, optioneel `approval` en `result`. Het wordt niet automatisch bijgewerkt; pas het bestand aan als een agent anders gaat werken.
