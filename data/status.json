@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T15:15:13+01:00",
+  "updatedAt": "2026-11-26T16:42:37+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -31,19 +31,10 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "AIv0IVoG/XerrRoKtKv1lw==",
-        "iv": "wM2lt6SkRGAlHzW+",
-        "ct": "XzQmEDotuuOxwXQb7l6No1gnJMgNh2gZxINsJN/tyTnsFy03/+FJGbbF/TBC+nQ3sS1qy54UfcBiJg10bF1be+0DMpnKJv1Q6YIBCJsEaCSsiJzysWGfPgM2e9RJ+AE3WMnskg612eC27TKlxUZZO3IHlYU0FWlGBgCuAzkolhvsYyxUjcbQa4p3HEcn7sHdXprV12BqeFZDmVAU7KfwkV3M5a4+wMCOV3qgMN7H3mWIAt2mxWJ3lAbn+0pH2Pez4Jl79qBpH12ebpq4FkGbXZuBosEWe+WSohHKtodPn4Gs5nTSXGwBaeGuTQG2LXrujCIGXGamjf7dKC9nPHK4z/omLDZVznI/2nhSDqNVi+5NvTkNQUeqfKYl2XhkEcib4gACOLsHsg4vkyfxXXp8Ez1RA7Ewju8KSfIujk0F+d+bLn8VdSb+MTazBuF/K8S/ktmov/MEVhWrnVTMwt1o1F2bpvHQNCB8w15q4Njl5thw2KQEum88bD/Er5PSqMiCEho2/f+BQpUDHjyPBxfuuQ3X1Suz8mRJPHDsgsqn"
+        "salt": "njzId4Mx+Ngq9QYBBfLdCg==",
+        "iv": "ex7rhggzOI9tkBRF",
+        "ct": "AWkURhdHt+v07Xhl/yduRQ1oqU3BL75weenXwI8lg8ni9604l5MqTIIfEfQ+3ucX+5ZyVpxjqF73wdZF+fRxGkP5ZCLWV78wM6dtAuyHn8NTbsAaQb5k/s0o226+F2erdZgFe8VhUbwg+V/sUHXQZaNu3/AtBfFGFgE4X4g+gaXQKx9hTY/nIhfpIk15E67KU0yTbPB/tNDgNsLzeNoGX5PuXKBfc+CwpV2JQ1OVm3chw9n1UESGOKBNklsuJhvUw5sz+CpH7/IJR85sfmVzHDWpGG95uaEnc4ae27XJC/iPeqaF0ZW8Zw6Q37qW2zHreOB7X85z6hgAy1dDwj5WtDkWbRfbqgmAJ1SIcp+JE+rZlQqr+h635CJ9VGITk/s7FY9Zs79CiF1w1nchU0ajqfdydz5Aod5nqHw/jpSS1QnArT9m+RwTKogn7OiQtmgU5VPrqkoqqVIc2ihxflm6THVMZTS6ZDgZhkQGzt9LTuL2Oibvj3OenHT0KH1/4qe0D6afq7gYE/xwBjrfDzK/pKh1slYUFMXKSmLrPYLD"
       }
-    },
-    "casoleo-instagram": {
-      "state": "idle",
-      "lastRunAt": "2026-11-22T09:04:44Z",
-      "lastRunStatus": "succeeded",
-      "nextRunAt": "2026-11-29T08:58:00Z",
-      "summary": "Planning staat tot half december; twee Reels en de wintertips zijn ingepland. Za 12-12 vult de volgende run.",
-      "approvalsPending": 0,
-      "runUrl": "https://claude.ai/code/session_01JMpixcRu8mBPRKZgWWEtbP"
     },
     "dih-linkedin": {
       "state": "idle",
@@ -51,12 +42,21 @@
       "summary": "Nog niet gedraaid; eerste run maandag om 08:37.",
       "approvalsPending": 0
     },
+    "casoleo-instagram": {
+      "state": "idle",
+      "lastRunAt": "2026-11-22T09:04:44Z",
+      "lastRunStatus": "succeeded",
+      "nextRunAt": "2026-11-29T08:58:00Z",
+      "summary": "Weekrun 22-11 klaar: 2 carrousels gemaakt en ingepland. Planning staat tot half december; 12-12 nog vrij.",
+      "approvalsPending": 0,
+      "runUrl": "https://claude.ai/code/session_01JMpixcRu8mBPRKZgWWEtbP"
+    },
     "casoleo-video": {
       "state": "idle",
       "lastRunAt": "2026-11-26T12:42:56Z",
       "lastRunStatus": "succeeded",
       "nextRunAt": "2026-12-03T12:40:00Z",
-      "summary": "Laadpaal-video (49 s, AI-stem) staat als concept in Publora; feiten gecheckt. Weekplanning plant hem zondag in, vóór 15-12 online.",
+      "summary": "Laadpaal-video (49 s, AI-stem) staat als concept in Publora; moet vóór 15-12 online. Feiten gecheckt.",
       "approvalsPending": 0,
       "runUrl": "https://claude.ai/code/session_01JMpixcEpdTKuxf8WwC4EGt"
     },
