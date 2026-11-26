@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T10:11:55+01:00",
+  "updatedAt": "2026-11-26T11:10:41+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -31,18 +31,18 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "Bly2h1kH4pAvRLFjXpNBNg==",
-        "iv": "REpH30i0c+czjMru",
-        "ct": "D5hvBFhYmOwZsdtLC229cSeYTU10OF4ZXrHVH+oij+p7z+H2wvF7JL/GfNGY4Zx7b4nwAQS8Xq/h1CwR7UC2D2CaSH1r2yuJX6a3At1B56ruYIJEcDbRw+/bH2w+irS1gfYsl6TYbCoUcdziO6RkqPGKjw6YT8HgVLTwgEaaqjZvR34RI7GVerLDHQ7ZMkPDgvabxlMsXLGHfQT5o5IddtMJbXTl/WMk1jjrCWgTpbvowXgh1JUzzwqMzQ6cX6F6xo9JZ/MSemwDjoLBmUBcmk72X/szx2wbbMFtxm3ZHuo4EochjDxa3dMLIpaXyTz7RFyUSb0eF3PQSzaxNfTA8DNMvp+0QwxcZE4SgwABGoiO90Wa7qXxVKzqjkp1xnHKnlY2ciuXKnPHMLe+AfXPKJJCMQ725csDgvS8aEgXJ/aG01iS7F14LssX1Yi21hz6MEJib2WNyTo0a4Bd4qGoJELAWvKmZMr1Y8mFQFwj4jAwb1AUOzeirCsnjV8Eh1d8owDCEHPItX+75g7hq7ARsc0NRTIlYCwipTNGbpkz"
+        "salt": "OEbrMRRW6wgJlFOm+jbkxg==",
+        "iv": "xwI4WgojZR/K6ZD2",
+        "ct": "c72vNEvikmSHSpCctpEmV3d1f/fj+hhsif143BWhRXjmUCgQWkGE0cuskp7cVgT5EGFhO+u19V8nBjbOqtteQycV5oge6WOYznOENW8HCNY8xfzlQjnzyBqL6ZhmKx710UZDwa0SWIjC/E7M5KQTyyxaAWTtYQAauh2FiQXqh3/lY4Qc1ZK5VTAjPVJG0dedNTve1cERq31qEWSTSPgcFdury/5yCCJPzaIj8eljPJJdcrFdlnRoz7zBaYjzv9EfY+Mu394gSm+Hx2/SnMunB39lpapnIg/CjUVLRSdXxjgmAAw7+rHflbbRD06ms0BlZ4rSy0ZT+E727SRqdp9zY+6J464t4L8JqvHpB5nZepYaLE/uSzNrP1WjmihsICcooWlmczCtohNfEv2fgzr6w2NS/vMo9cg1QAib9MBUNBnKKAJPfIWbCeAiwgTKQ8rBtsf37wtSTsQ7fp42ASJ5EfXTDfEzQtiG8bNsPTDq7Su340wN2VPuaHmt5xS5LZeNnQ+TbikVjOeLwmrX3wXarZeVUHegICChmOoO9Uzm"
       }
     },
     "casoleo-instagram": {
-      "state": "waiting",
+      "state": "idle",
       "lastRunAt": "2026-11-22T09:04:44Z",
       "lastRunStatus": "succeeded",
       "nextRunAt": "2026-11-29T08:58:00Z",
-      "summary": "Beide carrousels zijn ingepland. Voor de volgende Reel is nog een ingesproken opname van Kelvin nodig.",
-      "approvalsPending": 1,
+      "summary": "Planning staat tot half december; twee Reels en de wintertips zijn ingepland. Za 12-12 vult de volgende run.",
+      "approvalsPending": 0,
       "runUrl": "https://claude.ai/code/session_01JMpixcRu8mBPRKZgWWEtbP"
     },
     "dih-linkedin": {
