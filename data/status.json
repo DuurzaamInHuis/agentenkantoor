@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T04:30:09+01:00",
+  "updatedAt": "2026-11-26T06:09:00+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -20,7 +20,7 @@
       "state": "waiting",
       "lastRunAt": "2026-11-25T05:47:20Z",
       "nextRunAt": "2026-11-26T05:47:00Z",
-      "summary": "Gisteren gestart om 06:47; takenlijst ververst (de chat staat in Cowork). 6 urgente taken voor vandaag.",
+      "summary": "Gestart gisteren om 06:47; takenlijst ververst (de chat staat in Cowork). Volgende run vandaag 06:47. 6 urgente taken voor vandaag.",
       "approvalsPending": 6,
       "todo": [
         "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
@@ -33,9 +33,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "0o+dkpLLmUQ2MKeDWkHAtA==",
-        "iv": "KneUoIJPIfS5gBfP",
-        "ct": "OjXjlDygq8Z6gOJy5UDUagVAKgeZXpA8fvNwWPhXL2RZdqiJEsEfnzNNKYQnBTqt/r2s3WvviObwiv9dEAq+5aM2oVGM13xWZ6Zl4Lk25sguoS35TxdY+JryLhzKpnzjOeuixYWXRaYaVocjvWieLmgPz1LOV/Y8RaSbifHiUgoNs0x2quVcCgxtjsAcJklkKlX5Gh10WHLreEHRBaBW92HWJOiT2cqdQUkJMTzHqZyX9ThFK1utYUkCETuI2Ekd3P6N4jFJAT+5mDA3Hgv48xdvx9jS1JFxG8b+6C5ksHLcOL+BCuPg8ma+c/bCwPjJJX8m0wycj832AQRRgJ2g7I3b/RmohcGxEIWMoqWHFSqIy1vcKCBoONWRxomvhnUDit1j3OF9nl7tU4RwxzLS54lm7PtmF0mfiT2aFEmsj2r+KFZDLGHw87jQXcfTUUYLONfB3LrgZpS+/JpO2gdUnbsy7HSQdCvvN2JBh4IAw+A2kYf1H1WICMC1GmEO90GxRALwJwtHRQEYgMASyWBsaHbAh0CvJaYjH+JjJSuI"
+        "salt": "218w4dik6xdXqSWmWc8MZw==",
+        "iv": "h9EuVIF1ZzkxkaSw",
+        "ct": "BPJmasojupa8dmi9R9EQgixmQv3WELLRTNINZ667hyKXLx9y/KXDuLKBW49bksF5dlvdQMzaeVvI2+o3pRnqWcncpOENk2q7r/YblMOg5veOfRXamUSX+E5VauD4zzxDG+ayF+tbEsS2o+i4nGFGwa2fmwJhM8i959WLIrJWyzBTHhuS6JqoqbWvGVHIBWCaVH/9zv7qUjdTHV4uY7vVsZDFIV31qYCJLlkmecNIjmIv+0Dc29j5TLykRYu/3zPG9lO95vgx0ICTGwoO97yDBKaitUooj6ID0T+XMeSzcqyyYaR8LZed5r5yk+8hnK9i9qpG3IpJhHziutvmT1HYMxvzlAcXsGi9Df4UWDqodyKcx13YsmX4VyaD4AQjSggUTXADNw8xtgTwHFfjdwhDhqyYRCOd8TWtpAzqAHbjTTouluVgYZbypX00j6ea+ovMQhsbtzAAJC/0zVWsOpdyYFbuDY7C6bcJ6Ajci+cKAEhkbDGhAn22zrhPB8cVT8sV+EwJBd8ZCbtZKGooUJsxz1PtXvSB3M6ch+qUzKdl"
       }
     },
     "casoleo-instagram": {
