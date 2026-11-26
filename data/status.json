@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T13:10:16+01:00",
+  "updatedAt": "2026-11-26T14:32:20+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -31,9 +31,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "xfp9AJYzMuNEE11jNZFkCg==",
-        "iv": "cTu/giFONxKGBDdC",
-        "ct": "PBrBKscQpjhNA2iBHh3TEw0eKy/Z7i0Wudg8qQc/Sl7Tu+BZxI3YjiQU+obnhfKN2gzj6tCR6UDelSxKTLavtuKGrPvfPZNrajslC9VgOUsvb1k86m6CrQLGFAwvoGRhMpFTbvMja9h8C0Syv+KaxzCmqRfo0FRfOiJiaItLqIChbbRpyfWfQvM+M9meZh68A6nOuS0n2ITC7Y3t8mGmjXgPEqWBG7pXSu21K6s2YyVMGb30JYb1UBZXEZ6DLfdg73gRLY1KOnLfHqfv3upLR+bT+UtJwexySJFR4fSLKg0G2miEfG0lQtOR+dAMUkQwB+aOMyMgUBUpoV64d7LrbLf9QXdPRuVUL3EkoGu+NvNmWDgPoFnF2pBPDNWnNwcCJ/rFFczKLcuJ9bXTguESe+pYS2Dliwl9WUDQGc8bzKdkLbWVwouVZnn2uyL3gexfpygSX4FHYPjIjZDNxvC2Fr8ClTLgrGuVIklLEr4QUctpHfJiQztHoJl7N2gDaS+6ppckbfHZE+O5Dbgev1w4ts3N7Qng5ehVzvGRN7lj"
+        "salt": "AIv0IVoG/XerrRoKtKv1lw==",
+        "iv": "wM2lt6SkRGAlHzW+",
+        "ct": "XzQmEDotuuOxwXQb7l6No1gnJMgNh2gZxINsJN/tyTnsFy03/+FJGbbF/TBC+nQ3sS1qy54UfcBiJg10bF1be+0DMpnKJv1Q6YIBCJsEaCSsiJzysWGfPgM2e9RJ+AE3WMnskg612eC27TKlxUZZO3IHlYU0FWlGBgCuAzkolhvsYyxUjcbQa4p3HEcn7sHdXprV12BqeFZDmVAU7KfwkV3M5a4+wMCOV3qgMN7H3mWIAt2mxWJ3lAbn+0pH2Pez4Jl79qBpH12ebpq4FkGbXZuBosEWe+WSohHKtodPn4Gs5nTSXGwBaeGuTQG2LXrujCIGXGamjf7dKC9nPHK4z/omLDZVznI/2nhSDqNVi+5NvTkNQUeqfKYl2XhkEcib4gACOLsHsg4vkyfxXXp8Ez1RA7Ewju8KSfIujk0F+d+bLn8VdSb+MTazBuF/K8S/ktmov/MEVhWrnVTMwt1o1F2bpvHQNCB8w15q4Njl5thw2KQEum88bD/Er5PSqMiCEho2/f+BQpUDHjyPBxfuuQ3X1Suz8mRJPHDsgsqn"
       }
     },
     "casoleo-instagram": {
@@ -53,9 +53,12 @@
     },
     "casoleo-video": {
       "state": "idle",
-      "nextRunAt": "2026-11-26T12:40:00Z",
-      "summary": "Nog niet gedraaid; eerste run vandaag (donderdag) om 13:40.",
-      "approvalsPending": 0
+      "lastRunAt": "2026-11-26T12:42:56Z",
+      "lastRunStatus": "succeeded",
+      "nextRunAt": "2026-12-03T12:40:00Z",
+      "summary": "Laadpaal-video (49 s, AI-stem) staat als concept in Publora; feiten gecheckt. Weekplanning plant hem zondag in, vóór 15-12 online.",
+      "approvalsPending": 0,
+      "runUrl": "https://claude.ai/code/session_01JMpixcEpdTKuxf8WwC4EGt"
     },
     "casoleo-maandbriefing": {
       "state": "idle",
