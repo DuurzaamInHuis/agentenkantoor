@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T06:09:00+01:00",
+  "updatedAt": "2026-11-26T07:10:46+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -9,18 +9,17 @@
     },
     "dih-instagram": {
       "state": "waiting",
-      "lastRunAt": "2026-11-25T17:36:56Z",
-      "lastRunStatus": "succeeded",
-      "nextRunAt": "2026-11-26T05:45:00Z",
-      "summary": "Geen nieuwe video ingepland (vorst blijft). Carrousel mist nog slides; wacht op Kelvins keuze hoe die te maken.",
+      "lastRunAt": "2026-11-26T05:45:51Z",
+      "nextRunAt": "2026-11-27T05:45:00Z",
+      "summary": "Gestart vandaag om 06:45; de chat staat in Cowork. Carrousel mist nog slides en wacht op Kelvins keuze hoe die te maken.",
       "approvalsPending": 1,
       "runUrl": "https://claude.ai/code/session_01JMpixbujRE72SDVUo5AvJP"
     },
     "dih-dashboard": {
       "state": "waiting",
-      "lastRunAt": "2026-11-25T05:47:20Z",
-      "nextRunAt": "2026-11-26T05:47:00Z",
-      "summary": "Gestart gisteren om 06:47; takenlijst ververst (de chat staat in Cowork). Volgende run vandaag 06:47. 6 urgente taken voor vandaag.",
+      "lastRunAt": "2026-11-26T05:48:10Z",
+      "nextRunAt": "2026-11-27T05:47:00Z",
+      "summary": "Gestart vandaag om 06:48; de chat staat in Cowork. Takenlijst nog van gisteren. 6 urgente taken voor vandaag.",
       "approvalsPending": 6,
       "todo": [
         "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
@@ -33,9 +32,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "218w4dik6xdXqSWmWc8MZw==",
-        "iv": "h9EuVIF1ZzkxkaSw",
-        "ct": "BPJmasojupa8dmi9R9EQgixmQv3WELLRTNINZ667hyKXLx9y/KXDuLKBW49bksF5dlvdQMzaeVvI2+o3pRnqWcncpOENk2q7r/YblMOg5veOfRXamUSX+E5VauD4zzxDG+ayF+tbEsS2o+i4nGFGwa2fmwJhM8i959WLIrJWyzBTHhuS6JqoqbWvGVHIBWCaVH/9zv7qUjdTHV4uY7vVsZDFIV31qYCJLlkmecNIjmIv+0Dc29j5TLykRYu/3zPG9lO95vgx0ICTGwoO97yDBKaitUooj6ID0T+XMeSzcqyyYaR8LZed5r5yk+8hnK9i9qpG3IpJhHziutvmT1HYMxvzlAcXsGi9Df4UWDqodyKcx13YsmX4VyaD4AQjSggUTXADNw8xtgTwHFfjdwhDhqyYRCOd8TWtpAzqAHbjTTouluVgYZbypX00j6ea+ovMQhsbtzAAJC/0zVWsOpdyYFbuDY7C6bcJ6Ajci+cKAEhkbDGhAn22zrhPB8cVT8sV+EwJBd8ZCbtZKGooUJsxz1PtXvSB3M6ch+qUzKdl"
+        "salt": "zLZx/xcEr42DmRgMEegvxg==",
+        "iv": "jVVH6ypYQHSS/XVu",
+        "ct": "b6OoU+dvFqgmQQSB6DVEAWTKRCekqBrl6RyERPTOAJtl24CNbZjvI/MarYzzmbrQNx69YUs4EWBzciJ8RZFtBzbP9aczkGHcp/2N+FtugdINj1hsOM6Yq6QDiB7NSpMo6ImOvRCIBNFvRorjMaMWW7LHkDstEDKjR0s/FzLeWdc9SPuqAIS8LHIMKaoNGP+N1sm49+OHVWzzSeX8wMhAzFxu3/OCzNZZJqkiUo5hIyPMX3qmEeivrnM6VHlg8hFPBD5D8et8jz8w9exlI5Gr9w89U6QUgXthKexfYSxFk/F0NYSp+Oox9ucUGcNdQAAcRF17KC3fXeoW2s3RBMQVbUuHBQSiGNix1FOtSJoXTX3W07q/yzfvPfT5c4qe83jP3/VbY9U2npVmDHtOAiM7jZ7+FDtJqwMypDgDde7Tyd0I1snW4x9QMXe7yU6/sMJpZdcAeD9ApXZP8EAHziC+aZwWz54coU/FTu6zrGsnY+uTpKkX4PniFV+gBpgl77TtzoSe3XEnmvV9OalPYuEDeAKKvk2VVkY/xJxnbD0j"
       }
     },
     "casoleo-instagram": {
