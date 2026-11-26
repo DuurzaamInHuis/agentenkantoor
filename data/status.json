@@ -1,19 +1,6 @@
 {
-  "updatedAt": "2026-11-26T18:06:17+01:00",
+  "updatedAt": "2026-11-26T19:11:10+01:00",
   "agents": {
-    "optima-content": {
-      "state": "idle",
-      "nextRunAt": "2026-11-29T08:46:00Z",
-      "summary": "Nog niet gedraaid; eerste run zondag om 09:46.",
-      "approvalsPending": 0
-    },
-    "dih-instagram": {
-      "state": "idle",
-      "lastRunAt": "2026-11-26T05:45:51Z",
-      "nextRunAt": "2026-11-27T05:45:00Z",
-      "summary": "Gestart vandaag om 06:45; de chat staat in Cowork. Geen eigen run-sessie voor deze start gevonden.",
-      "approvalsPending": 0
-    },
     "dih-dashboard": {
       "state": "waiting",
       "lastRunAt": "2026-11-26T05:48:10Z",
@@ -31,15 +18,28 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "njzId4Mx+Ngq9QYBBfLdCg==",
-        "iv": "ex7rhggzOI9tkBRF",
-        "ct": "AWkURhdHt+v07Xhl/yduRQ1oqU3BL75weenXwI8lg8ni9604l5MqTIIfEfQ+3ucX+5ZyVpxjqF73wdZF+fRxGkP5ZCLWV78wM6dtAuyHn8NTbsAaQb5k/s0o226+F2erdZgFe8VhUbwg+V/sUHXQZaNu3/AtBfFGFgE4X4g+gaXQKx9hTY/nIhfpIk15E67KU0yTbPB/tNDgNsLzeNoGX5PuXKBfc+CwpV2JQ1OVm3chw9n1UESGOKBNklsuJhvUw5sz+CpH7/IJR85sfmVzHDWpGG95uaEnc4ae27XJC/iPeqaF0ZW8Zw6Q37qW2zHreOB7X85z6hgAy1dDwj5WtDkWbRfbqgmAJ1SIcp+JE+rZlQqr+h635CJ9VGITk/s7FY9Zs79CiF1w1nchU0ajqfdydz5Aod5nqHw/jpSS1QnArT9m+RwTKogn7OiQtmgU5VPrqkoqqVIc2ihxflm6THVMZTS6ZDgZhkQGzt9LTuL2Oibvj3OenHT0KH1/4qe0D6afq7gYE/xwBjrfDzK/pKh1slYUFMXKSmLrPYLD"
+        "salt": "S8YNtBOqV+d8kABXp4I/HA==",
+        "iv": "ZHvsI5GXa/eR6vni",
+        "ct": "7vRuhjtx30xGzKtL9qKS5zrTq9dZJxR3awp64busg1uo0jRmPENJ40guwqHFaTgK13kTZDGhlKEh7b32ykGYOhOopkTvFET5/tWoEoYde620S2zbe9jjy993kLdPgJQY/7jeyXOSCPcOtMKM5aPbJifiGefylQQ/eABhtPXal4T6qW946nSBX3SxRx+zTXEi7HSQNgCZ3Oz16AGVcLMF35zdllMQtsxDqpNFzVnTrQKoBQbYHOB1EaASlO8Jfg/agqMGGZeY5HE8NGtSUJJ9qZHo6TmuIhyJDDdZetlGcBVkMixD/bW5E0Q/GbWRADynhqrECgB5xn3NmrM9WmbELvZZDDJOJ+vVi2h8SSeYI9yLREaBLRA+4RWuuGjIOsL7N/gaFlJD+lSRxG11zJ0AbpzKSXOMqcTd1u/wrbG//ZxWyYQn8jGLYCafQgTDYHeCglaCPJsy/O+k1Bhv4Ia6p5EQIeX+zNiluViGdzQEWFhu6oic0OO9s5Q3FOmMAGyf3WImuE8DChrhJviRvrR6HVQ1R6DLdWizaOgbfQbt"
       }
+    },
+    "dih-instagram": {
+      "state": "idle",
+      "lastRunAt": "2026-11-26T05:45:51Z",
+      "nextRunAt": "2026-11-27T05:45:00Z",
+      "summary": "Gestart vandaag om 06:45; de chat staat in Cowork. Geen eigen run-sessie voor deze start gevonden.",
+      "approvalsPending": 0
     },
     "dih-linkedin": {
       "state": "idle",
       "nextRunAt": "2026-11-30T07:37:00Z",
       "summary": "Nog niet gedraaid; eerste run maandag om 08:37.",
+      "approvalsPending": 0
+    },
+    "optima-content": {
+      "state": "idle",
+      "nextRunAt": "2026-11-29T08:46:00Z",
+      "summary": "Nog niet gedraaid; eerste run zondag om 09:46.",
       "approvalsPending": 0
     },
     "casoleo-instagram": {
