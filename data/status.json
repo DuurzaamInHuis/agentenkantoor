@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T16:12:00+01:00",
+  "updatedAt": "2026-11-27T17:10:00+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
@@ -31,9 +31,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "+fmPmuCOLniH/WhVtVBdnQ==",
-        "iv": "x86BQqCHY0RqZS1c",
-        "ct": "c8PldhJweGQsBiPmb87KHBJah20o+AcvxZXWbibdxGPlpnl3GVQcqSGsSCPHyv2vNpRmY45cFUtsQ8PtfKx7UIZt8xD1F4lcHbJ0MBK8DszA33OvZemGUnrSnJLucEa8VftKZ9xP2SCgPIm1TzjL3r5kt5W4zzspOvncx6gByY8h/0Bzmg64zd2zmzU/aQkN54CKqYk6n1pWT3724tVSK26GCCM1JE9HC4vIrCzx4eneeymedLLvMU4T1raQoiDncZt2/tJdjG3w5wTRuItOsz+zI5cqgYoJZxno8Bdl1i+maHajbLmpsMIFCUFS+favfZd5z7SlG/4r7zFhKeUMDIg2GQYWbGgXnN1dz/Zl7VkkmvqWRJnojuSizOVyG9MXSy9e0SP6UZdItxJkqbe2et4D4Qxmo7Mv6f82MCgVWBo3nkgUOVaiLDeI46U4u3+8HP/fjl9oOexkc8+zq4WN8EgAsEdE2FeU3srxIW9H3hWZZqmmqn8Pq2zK/5WtRBQzH7MHuL0VmuHrLPXoND6pcZfxegeC59FDcAs="
+        "salt": "zktRgTjHKA/fqV+pxBeOqA==",
+        "iv": "1miPCT15dp4GQnuR",
+        "ct": "SfJkKeUv8Q73qBqir0yhGGTFdtagCXmsLE3PoVbVgP9YizJbwjTOHLvVtAeRvRMY2r2LYuNAUCGXsJ3UX9Wiqr8CP32br+S4A27Rcm3PZEMD7TZT5/7Gp534+6v6XayEj/NTXl9xV7BHvHEgfsPrgK3XQIXXGzQj9hZsuH+EynS81n+C7gItxM9lm4/c91iIeMUGwA+fqSGCsGUuXGMAwCaVSEX2PhFCPv7AdApLsDgVfpvIls4ieUr/FNvKyBFwmOCP7+NCeEJLUt4hnoeRInA8FdGC7t1HoaorslLDk5v2/mh2N0+hcK6qqC1G6k4LafBaCbGJJ8E6VvV3iQl/SocCEakYuMGFyAAyWlmL0wLqKgkqsVycNsEqZWawTqJKugGXYKa/nSkEODnD9cqR30q1vTuFrr2rA9P8cdn+5bNbMANYAxovfleJQ2laGlv69n/XKvrz0j5/hMiyVZkBtuiZKC50WPHqfgQZMTqSTPd/iEpgjkoehK7h6kjCJv8K/VCDJeM7RGgB9v3la/n/98UNwoVs0ZZvWZU="
       }
     },
     "dih-linkedin": {
