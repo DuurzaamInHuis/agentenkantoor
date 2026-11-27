@@ -1,6 +1,12 @@
 {
-  "updatedAt": "2026-11-27T13:11:33+01:00",
+  "updatedAt": "2026-11-27T14:11:44+01:00",
   "agents": {
+    "optima-content": {
+      "state": "idle",
+      "nextRunAt": "2026-11-29T09:46:00+01:00",
+      "summary": "Nog niet gedraaid; eerste run zondag 09:46.",
+      "approvalsPending": 0
+    },
     "dih-instagram": {
       "state": "idle",
       "lastRunAt": "2026-11-27T06:46:11+01:00",
@@ -25,9 +31,9 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "XDSaVqIcHrDpyldw5d5GqQ==",
-        "iv": "9+IVWa/t07VixQ9Y",
-        "ct": "aYTlOZLaFxITFOtSNtlmx33wM9O5V3O1eDnS4XlBlSHQUwKfMwCEzVX8iGwnbs5uQ9I0fl+DcYi8ZtuCdbTBrURr1z3eAzfinxEpirgkKhjNqO1PB6OnwoIb31CTP3sj6OjJskgbztQrSEUq65V6vR6KWFejOID+zQqpE3GzNxwnQGyJEWGuKW4IEN0cbC4tE8pcqUG3V1H+Z3whPjQgS8I+j4+J5zV9GINAYIRtwIH9w9nUo5qdEJMNYqEQ4uZihs2NLDlD/F/0qkh0L6yLv0lRddHb3etgbDeG8ekx1hmw7B0fuc4KgD7myPaje+RDIr1P9xlFfM1fmpqlhCNTo9DWpQyUg+t1QceiXRb1avZ5r3tfWQPre8rZrm35ANTgob+EwyetE1IHIvP6Q2Dq0o+1c63cdnCRbkWsxJwjaif6NSYCPzZ5qLeMcbbUyzwyTJexvBQ6Q/dXfy32gFPyRS3gHQUyHJ9WhpRqEJlhvnV3mzBxpM/MwBJ9BI+BKtsTkcEnkrK0GdKXwn4fFgidXjZwklcTdiy4kkw="
+        "salt": "E+yx7RzfncvgnZ2cWaWQQg==",
+        "iv": "GFM32sZuqf/EaG21",
+        "ct": "bMwOAa+DB8DLuKNhSXS8QzqcjXNQyT0HO96zxqPi35oZkZ+e1UDuFKeWBMq21HC8f0o8x5Mahc593POFww/pEzmsvm3998XD+hVr2NYwAaBh3BeXnOKiGYy8lRwl5ttD+Kq0DdgjFVWXBZ8Zg2Ja3CsThMe7M68r1B1oYiaA+y+a1JR+Sr+kGlVa1e/Ddg9MSCt6PJMMRXvgMsYRRskaFP9W9anWVSfVUhQkGA/WiOt3J6/inPY606I9PNsTPo//1c7jKlzp0fbOsfgS1DH0V96Zrx12ZCRevNe8jPZMPSmbnhkUpCh5eTkBl56CECnzIZ0K2L2t+h+MGfw8WEsaDtqUetB+wmHq5WL0svqyWCQq8I4XRyFTIwXRQyZmFSNhpwAiqrsm7+yJxmo5wMN2GFKYB6VGIf3rBekgU0xPmikmk7mns86oEuS+ba88fQf7Ru7jyifA8PmaKE7uyFEcTnw9sNUs08GNLutWA876GfGbWGS/uf89le23DpGS8ONtEesuugtsnz+bPnVXhnGnDIfccsGWVk7h5IQ="
       }
     },
     "dih-linkedin": {
@@ -58,12 +64,6 @@
       "state": "idle",
       "nextRunAt": "2026-12-01T09:38:00+01:00",
       "summary": "Nog niet gedraaid; eerste briefing op 1 december om 09:38.",
-      "approvalsPending": 0
-    },
-    "optima-content": {
-      "state": "idle",
-      "nextRunAt": "2026-11-29T09:46:00+01:00",
-      "summary": "Nog niet gedraaid; eerste run zondag 09:46.",
       "approvalsPending": 0
     }
   }

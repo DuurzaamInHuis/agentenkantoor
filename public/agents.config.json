@@ -45,9 +45,9 @@
       "role": "content",
       "description": "Plant en schrijft de content voor de komende week",
       "schedule": "Zondag",
-      "triggerName": "Optima – Content",
+      "triggerName": "Optima · Content",
       "triggerMatch": "exact",
-      "planned": true
+      "planned": false
     },
     {
       "id": "optima-ads",
@@ -112,7 +112,7 @@
       "role": "planning",
       "description": "Plant Instagram-posts rond bijzondere weermomenten",
       "schedule": "Dagelijks 06:45",
-      "triggerName": "DIH Instagram weermomenten|Agent: DIH Instagram weermomenten",
+      "triggerName": "DIH Instagram weermomenten|Agent: DIH Instagram weermomenten|DIH · Instagram weermomenten",
       "triggerMatch": "exact",
       "planned": false
     },
@@ -124,7 +124,7 @@
       "role": "taken",
       "description": "Ververst elke ochtend het DIH-dashboard en zet klaar welke taken vandaag urgent zijn",
       "schedule": "Dagelijks 06:47",
-      "triggerName": "Dashboard Duurzaam In Huis dagelijks verversen|Agent: DIH Dashboard dagelijks verversen",
+      "triggerName": "Dashboard Duurzaam In Huis dagelijks verversen|Agent: DIH Dashboard dagelijks verversen|DIH · Dashboard dagelijks verversen",
       "triggerMatch": "exact",
       "planned": false
     },
@@ -136,7 +136,7 @@
       "role": "content",
       "description": "Maakt elke maandag 2 LinkedIn-posts van poll-uitslagen en Instagram-cijfers",
       "schedule": "Maandag 08:37",
-      "triggerName": "DIH LinkedIn weekposts",
+      "triggerName": "DIH LinkedIn weekposts|DIH · LinkedIn weekposts",
       "triggerMatch": "exact",
       "planned": false
     },
@@ -148,7 +148,7 @@
       "role": "planning",
       "description": "Maakt elke zondag de Instagram-planning voor de week",
       "schedule": "Zondag 09:58",
-      "triggerName": "Casoleo Instagram weekplanning",
+      "triggerName": "Casoleo Instagram weekplanning|Casoleo · Instagram weekplanning",
       "triggerMatch": "exact",
       "planned": false
     },
@@ -160,7 +160,7 @@
       "role": "content",
       "description": "Maakt elke donderdag de video's van de week uit de goedgekeurde onderwerpen",
       "schedule": "Donderdag 13:40",
-      "triggerName": "Casoleo video-agent|Casoleo AGENT: Video",
+      "triggerName": "Casoleo video-agent|Casoleo AGENT: Video|Casoleo · Video",
       "triggerMatch": "exact",
       "planned": false
     },
@@ -172,7 +172,7 @@
       "role": "briefing",
       "description": "Stelt elke maand de onderwerpen en video's voor en zet ze na akkoord in de wachtrij",
       "schedule": "Elke 1e van de maand om 09:38",
-      "triggerName": "Casoleo maandbriefing|Agent: Casoleo maandbriefing",
+      "triggerName": "Casoleo maandbriefing|Agent: Casoleo maandbriefing|Casoleo · Maandbriefing",
       "triggerMatch": "exact",
       "planned": false
     }
