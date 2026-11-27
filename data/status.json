@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-27T06:11:14+01:00",
+  "updatedAt": "2026-11-27T07:11:43+01:00",
   "agents": {
     "dih-dashboard": {
       "state": "waiting",
-      "lastRunAt": "2026-11-26T05:48:10Z",
-      "nextRunAt": "2026-11-27T05:47:00Z",
-      "summary": "Laatst gestart gisteren om 06:48; de chat staat in Cowork. Volgende run vandaag 06:47. 6 urgente taken voor vandaag.",
+      "lastRunAt": "2026-11-27T05:47:49Z",
+      "nextRunAt": "2026-11-28T05:47:00Z",
+      "summary": "Gestart vandaag om 06:47; de chat staat in Cowork. 6 urgente taken voor vandaag.",
       "approvalsPending": 6,
       "todo": [
         "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
@@ -18,16 +18,16 @@
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "ykQeoXR0/uFoGaeb3/8dKQ==",
-        "iv": "FH2HjYmBRNbxdSYC",
-        "ct": "BaK5b00jmVCIHuPNTqyx9jZfz1dUSuoc4n+lzS3BLV+Fun2L+RQv66eAwyG6FbANm1tHBi1vqqiGNpTDQuTZtWHWB9MnzkE2bNOTEUZpdSIGSJa76QUGvYWrB8OERSqsQFZl0xmkqbF7cmou+yLPce0mxPWEDcQ6Jw3sa0xmLbm9QV157Np6oiVC37dLIlges253hxevKBZ80+1seVwEFjPKGzaC3xmPVYGpZX7Pfq3XIwZ9rBPtsWrwg+95gYO6QtFIsU40E5f0vGIpwtGOXd8XvRNJxiIQM4U6v57nBziCFbPbWTIamYyOTuDIMGRKHN5znKIUwfAGH2ATG7i7JBVmLI+CYiyepiMon4/NNFiR0DltBKJ1JFkPUGMYBu2vKdmLmy7QEL6BOOijRUjxelyxq1+Y+5n/bjzZ/SIHXnIroA81oWv1WdkahUFvAs/SpaN3a7m9eufcwUPEw3Xv29DpBycU3z5GmS7VkhyS8oIqqNpXBlMh5KdOb1fdE92960N5LbRq639CPpRLZOLjNk55D1FbnvMRthIEESbt"
+        "salt": "OBts+iPpJGQl9ijuGhiYmg==",
+        "iv": "kd7tSl/r/Ojb7TSF",
+        "ct": "9dMHeTFM3UHMqLZXRRvpU/DDLcifCXYXf//UsvqcwwS6DD8vFMHycDfIxtGTwjR8qlkNG782XK5fDnsUxakXsHEJT31FybxDJMfWUcrEQY41qlV0kGHjysalVfUgpH5iOLfsAPaSKfarAmZLOJZLfRDo9M03enFJiHY6wUZZhUZi1pvbiW4CzQ+cUI9GDA9u6SovDxIqIVQ3Dj2jDv2WQcIxttnIkhCof4ssODvNFG9r19b+AuAp/r4hEbs6WSj92Y1gKLwQgtjw6JEdv0SqEgRdNybWcnp9kkZCXKUS20muC3RJ0epq0ZiKhkYhjHzgK76A1gKN3TebFwpqfZ8zMLLJBGEndTDb+BtRzqG17oEyXW/FKjZ/FA2LqNFOWpd9scIxQrnnjUYjDxolE+/yxeEYu7fqvweLgkmNrC3UHAoJpBZ4RZWJJZJFV/VN2QpQqaQEpB9tXN1uW3wWFoPQCeYotSdlWn6U9Z5iqeiVnMSZu5n6PHvP6I6y52CJBTqmnD5NQ94am8LUCqDT9ji2fSRG0ZMCmGTWfPQHwHyF"
       }
     },
     "dih-instagram": {
       "state": "idle",
-      "lastRunAt": "2026-11-26T05:45:51Z",
-      "nextRunAt": "2026-11-27T05:45:00Z",
-      "summary": "Laatst gestart gisteren om 06:45; de chat staat in Cowork. Volgende run vandaag 06:45.",
+      "lastRunAt": "2026-11-27T05:46:11Z",
+      "nextRunAt": "2026-11-28T05:45:00Z",
+      "summary": "Gestart vandaag om 06:46; de chat staat in Cowork. Volgende run morgen 06:45.",
       "approvalsPending": 0
     },
     "dih-linkedin": {
