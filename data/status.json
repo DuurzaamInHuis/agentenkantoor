@@ -1,69 +1,69 @@
 {
-  "updatedAt": "2026-11-27T17:10:00+01:00",
+  "updatedAt": "2026-11-28T10:50:11+01:00",
   "agents": {
     "optima-content": {
       "state": "idle",
-      "nextRunAt": "2026-11-29T09:46:00+01:00",
-      "summary": "Nog niet gedraaid; eerste run zondag 09:46.",
+      "nextRunAt": "2026-11-29T08:46:00Z",
+      "summary": "Nog niet gestart; eerste run zondag 29-11 om 09:46.",
       "approvalsPending": 0
     },
     "dih-instagram": {
       "state": "idle",
-      "lastRunAt": "2026-11-27T06:46:11+01:00",
-      "nextRunAt": "2026-11-28T06:45:00+01:00",
-      "summary": "Gestart om 06:46; de chat staat in Cowork.",
+      "lastRunAt": "2026-11-28T05:45:29Z",
+      "nextRunAt": "2026-11-29T05:45:00Z",
+      "summary": "Gestart om 06:45; de chat staat in Cowork.",
       "approvalsPending": 0
     },
     "dih-dashboard": {
       "state": "waiting",
-      "lastRunAt": "2026-11-27T06:47:49+01:00",
-      "nextRunAt": "2026-11-28T06:47:00+01:00",
+      "lastRunAt": "2026-11-28T05:47:40Z",
+      "nextRunAt": "2026-11-29T05:47:00Z",
       "summary": "Gestart om 06:47; de chat staat in Cowork. 6 urgente taken voor vandaag.",
       "approvalsPending": 6,
       "todo": [
         "DIH administratie: algemene voorwaarden betalen (deadline verlopen)",
-        "Lead spouwmuurisolatie: reactie afwachten (deadline verlopen)",
+        "Lead spouwmuurisolatie: terugkoppeling afwachten (deadline verlopen)",
         "Lead kozijnen: subsidies toelichten (deadline verlopen)",
-        "Lead kozijnen: reactie fabrikant en lead afwachten (urgentie hoog)",
+        "Lead kozijnen: terugkoppeling fabrikant afwachten (urgentie hoog)",
         "Lead energielabel: label afmaken (urgentie hoog)",
         "DIH administratie: kosten opheffen (urgentie hoog)"
       ],
       "todoEnc": {
         "v": 1,
         "iter": 200000,
-        "salt": "zktRgTjHKA/fqV+pxBeOqA==",
-        "iv": "1miPCT15dp4GQnuR",
-        "ct": "SfJkKeUv8Q73qBqir0yhGGTFdtagCXmsLE3PoVbVgP9YizJbwjTOHLvVtAeRvRMY2r2LYuNAUCGXsJ3UX9Wiqr8CP32br+S4A27Rcm3PZEMD7TZT5/7Gp534+6v6XayEj/NTXl9xV7BHvHEgfsPrgK3XQIXXGzQj9hZsuH+EynS81n+C7gItxM9lm4/c91iIeMUGwA+fqSGCsGUuXGMAwCaVSEX2PhFCPv7AdApLsDgVfpvIls4ieUr/FNvKyBFwmOCP7+NCeEJLUt4hnoeRInA8FdGC7t1HoaorslLDk5v2/mh2N0+hcK6qqC1G6k4LafBaCbGJJ8E6VvV3iQl/SocCEakYuMGFyAAyWlmL0wLqKgkqsVycNsEqZWawTqJKugGXYKa/nSkEODnD9cqR30q1vTuFrr2rA9P8cdn+5bNbMANYAxovfleJQ2laGlv69n/XKvrz0j5/hMiyVZkBtuiZKC50WPHqfgQZMTqSTPd/iEpgjkoehK7h6kjCJv8K/VCDJeM7RGgB9v3la/n/98UNwoVs0ZZvWZU="
+        "salt": "C+H2z99NygS9p0eUrFTrvg==",
+        "iv": "sH8dGUGsimKVDe40",
+        "ct": "UZlmlR6k+K677vJ10m4+VhWvos0VZ5MXnrutzvzaFClKgtY/5OOaK/hT6A3yGPjYY3qju1ISAaiMf6ygdl+a5OBxHTZmn+HvCMZwlA2m0km22nPq387d4tVrfLHk9vBU3AFjVL1WXSkTKyQ3Pk/7qSUBrQpAH2qEK5MAHlK+ys3DXA7eP6tgQw1koKuJXA5VouQNdN+V16IZQJq6r5NC1UDScVoEZ6UaibOX8xaI+Duxf2AjXDflsLx6kHXQxYbCYSTQCygjniBPNDjQCGL8yKNWbEz1s1+XD2WA/tzw4W22Wd5KQh8R7bshbL24z1x+4LS4l6kDVjj3FKtneqkyjPHqgGa8M32HlJ7I1Rnkc5GrdDsNKduwZbV8ppM36M3lFCz2VHozojSkhjQuLZ7Jgt0e2tataAZ3dk2iq1QxdxJL0OxIZTbZPj7CeWN4h5g+jKV5kXcBh1hch1vq5J4g7N3XO8MycX58PrpVNoWzES8LZwUnYFswD8wBPML2RI7vUxfZDdV4BEm1dRwUUQSPW/lk"
       }
     },
     "dih-linkedin": {
       "state": "idle",
-      "nextRunAt": "2026-11-30T08:37:00+01:00",
-      "summary": "Nog niet gedraaid; eerste run maandag 08:37.",
+      "nextRunAt": "2026-11-30T07:37:00Z",
+      "summary": "Nog niet gestart; eerste run maandag 30-11 om 08:37.",
       "approvalsPending": 0
     },
     "casoleo-instagram": {
       "state": "idle",
-      "lastRunAt": "2026-11-22T10:04:44+01:00",
+      "lastRunAt": "2026-11-22T09:04:44Z",
       "lastRunStatus": "succeeded",
-      "nextRunAt": "2026-11-29T09:58:00+01:00",
-      "summary": "Carrousels en Reels ingepland tot half december; één plek op 12-12 nog vrij voor de volgende run.",
+      "nextRunAt": "2026-11-29T08:58:00Z",
+      "summary": "Twee carrousels gemaakt en na akkoord ingepland; planning tot half december staat.",
       "approvalsPending": 0,
       "runUrl": "https://claude.ai/code/session_01JMpixcRu8mBPRKZgWWEtbP"
     },
     "casoleo-video": {
       "state": "idle",
-      "lastRunAt": "2026-11-26T13:42:56+01:00",
+      "lastRunAt": "2026-11-26T12:42:56Z",
       "lastRunStatus": "succeeded",
-      "nextRunAt": "2026-12-03T13:40:00+01:00",
-      "summary": "Laadpaal-video (49 s, AI-stem) staat als concept in Publora; moet vóór 15-12 online. Feiten gecheckt.",
+      "nextRunAt": "2026-12-03T12:40:00Z",
+      "summary": "Laadpaal-video (49 s, AI-stem) staat als concept klaar en moet vóór 15-12 online. Feiten gecheckt.",
       "approvalsPending": 0,
       "runUrl": "https://claude.ai/code/session_01JMpixcEpdTKuxf8WwC4EGt"
     },
     "casoleo-maandbriefing": {
       "state": "idle",
-      "nextRunAt": "2026-12-01T09:38:00+01:00",
-      "summary": "Nog niet gedraaid; eerste briefing op 1 december om 09:38.",
+      "nextRunAt": "2026-12-01T08:38:00Z",
+      "summary": "Nog niet gestart; eerste briefing op 1 december om 09:38.",
       "approvalsPending": 0
     }
   }
